@@ -29,6 +29,7 @@ var prePopulatedFields = [FirstName, LastName, Email, Contact_Type__c, Access_Ty
 validatePrePopulate(prePopulatedFields);
 
 
+
 var initESW = function(gslbBaseURL) {
 embedded_svc.settings.displayHelpButton = true; //Or false
 embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
@@ -78,6 +79,7 @@ function validatePrePopulate(prePopulatedFields){
 		}
 		console.log('validating success' + prePopulatedFields[i]);
 	}
+}
 		
 </script>
 </body>
