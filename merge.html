@@ -41,7 +41,7 @@ embedded_svc.settings.prechatBackgroundImgURL = '';
 embedded_svc.settings.waitingStateBackgroundImgURL = '';
 embedded_svc.settings.smallCompanyLogoImgURL = '';
 embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
-	if(Contact_Type__c === 'Retailer' && Access_Type__c === 'Full'){
+	if(prechatFormData[3].value === 'Retailer' && prechatFormData[4].value === 'Full'){
 		console.log('FullRetailer');
 		return '5730x000000CaSU';
 	}else{
