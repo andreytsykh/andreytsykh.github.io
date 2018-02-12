@@ -40,10 +40,17 @@ embedded_svc.settings.avatarImgURL = '';
 embedded_svc.settings.prechatBackgroundImgURL = '';
 embedded_svc.settings.waitingStateBackgroundImgURL = '';
 embedded_svc.settings.smallCompanyLogoImgURL = '';
-//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+	if(Contact_Type__c === 'Retailer' && Access_Type__c === 'Full'){
+		console.log('FullRetailer');
+		return '5730x000000CaSU';
+	}else{
+		console.log('ELSE');
+		return '5730x000000CaSF';
+	}
 // Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
 //Returns a valid button ID.
-//};
+};
 
 embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 embedded_svc.settings.entryFeature = 'LiveAgent';
