@@ -41,7 +41,7 @@ embedded_svc.settings.prechatBackgroundImgURL = '';
 embedded_svc.settings.waitingStateBackgroundImgURL = '';
 embedded_svc.settings.smallCompanyLogoImgURL = '';
 embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
-	if(prechatFormData[4].value === 'Retailer' && prechatFormData[5].value === 'Full'){
+	if(prechatFormData[3].value === 'Retailer' && prechatFormData[4].value === 'Full'){
 		console.log('FullRetailer');
 		return '5730x000000CaSU';
 	}else{
@@ -63,22 +63,22 @@ embedded_svc.settings.prepopulatedPrechatFields = {
 	AccountNamePrechat__c : AccountNamePrechat__c
 }; 
 //Sets the auto-population of pre-chat form fields
-var fullOrLimited;
-var buttonId;
-var eswLiveAgentDevName;
+// var fullOrLimited;
+// var buttonId;
+// var eswLiveAgentDevName;
 
-if(Contact_Type__c === 'Retailer' && Access_Type__c === 'Full'){
-	fullOrLimited = 'CSM_PS_Chat_Queue_Limited';
-	buttonId = '5730x000000CaSU';
-	eswLiveAgentDevName = 'EmbeddedServiceLiveAgent_Parent04I0x0000008OIUEA2_1610a16d2f0';
-}else{
-	fullOrLimited = 'RSM_PS_Chat_Queue_Full';
-	buttonId = '5730x000000CaSF';
-	eswLiveAgentDevName ='EmbeddedServiceLiveAgent_Parent04I0x0000008OIFEA2_160f660ce32';
-}
-console.log(fullOrLimited);
-console.log(buttonId);
-console.log(eswLiveAgentDevName);
+// if(Contact_Type__c === 'Retailer' && Access_Type__c === 'Full'){
+// 	fullOrLimited = 'CSM_PS_Chat_Queue_Limited';
+// 	buttonId = '5730x000000CaSU';
+// 	eswLiveAgentDevName = 'EmbeddedServiceLiveAgent_Parent04I0x0000008OIUEA2_1610a16d2f0';
+// }else{
+// 	fullOrLimited = 'RSM_PS_Chat_Queue_Full';
+// 	buttonId = '5730x000000CaSF';
+// 	eswLiveAgentDevName ='EmbeddedServiceLiveAgent_Parent04I0x0000008OIFEA2_160f660ce32';
+// }
+// console.log(fullOrLimited);
+// console.log(buttonId);
+// console.log(eswLiveAgentDevName);
 
 embedded_svc.init('https://joor--Sandbox.cs95.my.salesforce.com', 'https://sandbox-jooraccess.cs95.force.com/customer', gslbBaseURL, '00D0x0000008f29', fullOrLimited, { baseLiveAgentContentURL: 'https://c.la2-c1cs-iad.salesforceliveagent.com/content', deploymentId: '5720x000000CaRR', buttonId: buttonId, baseLiveAgentURL: 'https://d.la2-c1cs-iad.salesforceliveagent.com/chat', eswLiveAgentDevName: eswLiveAgentDevName}); };if (!window.embedded_svc) { var s = document.createElement('script'); s.setAttribute('src', 'https://joor--Sandbox.cs95.my.salesforce.com/embeddedservice/4.0/esw.min.js'); s.onload = function() { initESW(null); }; document.body.appendChild(s); } else { initESW('https://service.force.com'); }</script>
 </body>
