@@ -22,10 +22,9 @@ var FirstName = 'Test';
 var LastName = 'Test';
 var Email = 'Test@mail.com';
 var Contact_Type__c = 'Brand';
-var Access_Type__c = 'Full';
 var AccountNamePrechat__c = 'Test Account Name Prechat';
 
-var prePopulatedFields = [FirstName, LastName, Email, Contact_Type__c, Access_Type__c, AccountNamePrechat__c];
+var prePopulatedFields = [FirstName, LastName, Email, Contact_Type__c,AccountNamePrechat__c];
 
 validatePrePopulate(prePopulatedFields);
 
@@ -66,7 +65,6 @@ embedded_svc.settings.prepopulatedPrechatFields = {
 	LastName : LastName,
 	Email : Email,
 	Contact_Type__c : Contact_Type__c,
-	Access_Type__c : Access_Type__c,
 	AccountNamePrechat__c : AccountNamePrechat__c
 }; 
 //Sets the auto-population of pre-chat form fields
