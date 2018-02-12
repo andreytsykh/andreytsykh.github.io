@@ -20,6 +20,10 @@
 var FirstName = 'Andrey';
 var LastName = 'Tsykhmeistruk';
 var Email = '111@mail.com';
+var Contact_Type__c = 'Brand';
+var Access_Type__c = 'Limited';
+var AccountNamePrechat__c = 'Account Name Prechat';
+
 
 var initESW = function(gslbBaseURL) {
 embedded_svc.settings.displayHelpButton = true; //Or false
@@ -46,7 +50,10 @@ embedded_svc.settings.entryFeature = 'LiveAgent';
 embedded_svc.settings.prepopulatedPrechatFields = {
 	FirstName : FirstName,
 	LastName : LastName,
-	Email : Email
+	Email : Email,
+	Contact_Type__c : Contact_Type__c,
+	Access_Type__c : Access_Type__c,
+	AccountNamePrechat__c : AccountNamePrechat__c
 }; 
 //Sets the auto-population of pre-chat form fields
 
