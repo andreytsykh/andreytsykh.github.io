@@ -1,0 +1,24 @@
+The following opportunity for {!Opportunity.Account} has been won:
+
+{!Opportunity.Name}
+{!Opportunity.Link}
+Closed By: {!Opportunity.OwnerFullName} ({!Opportunity.Owner_Region__c})
+
+Contract Start: {!Opportunity.Contract_Start_Date__c}
+Contract End: {!Opportunity.Contract_End_Date__c}
+Contract Months: {!Opportunity.Contract_Months__c}
+
+TCV: {!Opportunity.Amount}
+Recurring Total: {!Opportunity.Recurring_Total__c}
+One Time Fee Total: {!Opportunity.One_Time_Fee_Total__c}
+
+Auto-Renew: {!Opportunity.Auto_Renew__c}
+Pilot Deal: {!Opportunity.Pilot__c}
+
+Billing Contact: {!Opportunity.Billing_Contact__c}
+Billing Contact Email: {!Opportunity.Billing_Contact_Email__c}
+Billing Term: {!Opportunity.Billing_Term__c}
+# of Payments: {!Opportunity.Number_of_Payments__c}
+Amount per Payment: {!Opportunity.Amount_per_Payment__c}
+Custom Billing Details: {!Opportunity.Billing_Details__c}
+JOOR ID: {!Account.JOOR_ID__c}

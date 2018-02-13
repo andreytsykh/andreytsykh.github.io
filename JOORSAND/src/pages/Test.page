@@ -1,0 +1,82 @@
+<!--
+ - Created by Valera on 25.01.2018.
+ -->
+<apex:page >
+
+    <apex:includeScript value="/support/console/37.0/integration.js"/>
+
+    <apex:remoteObjects >
+        <apex:remoteObjectModel name="Case" fields="Id"/>
+    </apex:remoteObjects>
+
+    <script type="text/javascript">
+
+        // on chat start, create case manually and populate the chat_key__c field.
+        // once agent closes the chat/case tabs then salesforce creates transcript.
+        // because we created case manually and not through pre-chat or deployment api then
+        // salesforce does not automatically link the transcript to this case, that is
+        // where the LiveChatTranscriptTrigger comes into play and links them for us.
+
+        sforce.console.chat.onChatStarted(function (chatResult) {
+
+            if (chatResult.success) {
+
+                // create case and set the chat_key__c field
+                // you can use the sforce.connection API, REST API, Remote Actions, etc.
+                // just make sure when you create the case you get that chat key field populated
+
+                var cs = new SObjectModel.Case({
+                    Subject: 'Live Chat Test',
+                    Origin: 'Web',
+                    Chat_Key__c: chatResult.chatKey
+                });
+
+                cs.create(function (err, records, evt) {
+
+                    console.log(err);
+                    console.log(records);
+                    console.log(evt);
+
+                    if (err) {
+
+                        alert(err.message);
+
+                    } else {
+
+                        sforce.console.getFocusedPrimaryTabId(function (primaryTabResult) {
+
+                            console.log('getFocusedPrimaryTabId');
+                            console.log(primaryTabResult);
+
+                            if (primaryTabResult.success) {
+
+                                console.log('primaryTabId: ' + primaryTabResult.id);
+                                console.log('caseId: ' + records[0]);
+
+                                sforce.console.openSubtab(
+                                        primaryTabResult.id,
+                                        '/' + records[0] + '/e',
+                                        true,
+                                        'Edit Case',
+                                        null,
+                                        function (openSubtabResult) {
+                                            console.log('openSubtabResult');
+                                            console.log(openSubtabResult);
+                                        }
+                                ); // end open sub tab
+
+                            } // end if
+
+                        }); // end get focused primary tab id
+
+                    } // end if
+
+                }); // end case create callback
+
+            } // end if
+
+        }); // end on chat started callback
+
+    </script>
+
+</apex:page>

@@ -1,0 +1,9 @@
+Hi, 
+
+The Case # {!Case.CaseNumber} has not received a response from the end-user for 48 hours. 
+
+{!Case.Link} 
+
+Please review. 
+
+Thanks

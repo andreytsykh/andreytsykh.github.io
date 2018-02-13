@@ -1,0 +1,10 @@
+Hi, 
+
+The Case # {!Case.CaseNumber} has been in Status: New for 4 hours. 
+
+{!Case.Link} 
+
+Please review. 
+Thanks
+
+{!Case.Thread_Id}

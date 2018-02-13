@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Automated response every time incoming case is created</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CASE: Integrations_Notification of case creation</name>
+    <style>none</style>
+    <subject>{!EmailMessage.Subject}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

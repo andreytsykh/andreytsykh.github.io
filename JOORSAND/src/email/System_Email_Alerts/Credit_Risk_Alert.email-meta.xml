@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Alert to to notify necessary owners that an account has been flagged for credit risk.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Credit Risk Alert</name>
+    <style>none</style>
+    <subject>{!Opportunity.Account} is at risk for a past due balance.</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

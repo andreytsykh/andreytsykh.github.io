@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <decisions>
+        <name>Check_for_Account_Id</name>
+        <label>Check for Account Id</label>
+        <locationX>257</locationX>
+        <locationY>60</locationY>
+        <defaultConnectorLabel>Account ID Blank</defaultConnectorLabel>
+        <rules>
+            <name>Has_Account_ID</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SourceAccountID</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue></stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Grab_Current_Account_Status</targetReference>
+            </connector>
+            <label>Has Account ID</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Right_Status_for_Update</name>
+        <label>Right Status for Update</label>
+        <locationX>90</locationX>
+        <locationY>308</locationY>
+        <defaultConnectorLabel>Not Applicable Status</defaultConnectorLabel>
+        <rules>
+            <name>Right_Status</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>SourceAccountStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Recycled</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>SourceAccountStatus</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Outreach - Stale</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Change_Account_Status_to_Outreach_Fresh</targetReference>
+            </connector>
+            <label>Right Status</label>
+        </rules>
+    </decisions>
+    <description>Triggered by Process Builder that identifies closed Tasks. Hit flow error when Tasks on Leads were clsoed because it couldn&apos;t find an Account ID. Need Flow builder to check for that and bypassing when the Task is not related to an Account via and other reltaed object (i.e. Contact, Case, etc..)</description>
+    <interviewLabel>Change Account Status to Outreach - Fresh {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Set Account Status to Outreach - Fresh</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Grab_Current_Account_Status</name>
+        <label>Grab Current Account Status</label>
+        <locationX>177</locationX>
+        <locationY>180</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Right_Status_for_Update</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>SourceAccountID</elementReference>
+            </value>
+        </filters>
+        <object>Account</object>
+        <outputAssignments>
+            <assignToReference>SourceAccountStatus</assignToReference>
+            <field>Status__c</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <name>Change_Account_Status_to_Outreach_Fresh</name>
+        <label>Change Account Status to Outreach - Fresh</label>
+        <locationX>372</locationX>
+        <locationY>316</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>SourceAccountID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Status__c</field>
+            <value>
+                <stringValue>Outreach - Fresh</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <startElementReference>Check_for_Account_Id</startElementReference>
+    <variables>
+        <name>SourceAccountID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>SourceAccountStatus</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

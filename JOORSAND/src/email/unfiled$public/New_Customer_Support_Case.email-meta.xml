@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>New Customer Support Case</name>
+    <style>none</style>
+    <subject>New Customer Support Case</subject>
+    <textOnly>Hello!  
+
+New Customer Support Case has been created.  
+
+Account: {!Case.Account__c} 
+Full Name: {!Case.Full_Name__c} 
+Email: {!Case.Email__c} 
+Case Reason: {!Case.Reason} 
+Description: {!Case.Description} 
+Link to the case: {!Case.Link}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

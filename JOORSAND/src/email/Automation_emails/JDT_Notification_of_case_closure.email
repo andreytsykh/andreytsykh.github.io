@@ -1,0 +1,11 @@
+Dear {!Case.Contact_FirstName__c},
+
+We would like to acknowledge that your case was closed.
+Please let us know if you have any additional questions.
+
+{!Case.Thread_Id}
+
+Thank you!
+
+Sincerely,
+JOOR Team

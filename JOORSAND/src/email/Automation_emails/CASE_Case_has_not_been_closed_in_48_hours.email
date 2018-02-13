@@ -1,0 +1,11 @@
+Hi, 
+
+The Case # {!Case.CaseNumber} has not been set to Status: Resolved in 48 hours.
+
+{!Case.Thread_Id} 
+
+{!Case.Link} 
+
+Please review. 
+
+Thanks

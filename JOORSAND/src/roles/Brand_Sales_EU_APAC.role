@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Brand - Sales (EU/APAC)</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Brand - Sales (EU/APAC)</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Director_of_Brand_Sales_EU_APAC</parentRole>
+</Role>

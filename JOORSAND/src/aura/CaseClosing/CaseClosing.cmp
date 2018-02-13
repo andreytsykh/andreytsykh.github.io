@@ -1,0 +1,11 @@
+<!--
+ - Created by new on 03.01.2018.
+ -->
+
+<aura:component implements="flexipage:availableForAllPageTypes,force:lightningQuickAction,force:hasRecordId"  access="global" controller="CaseClosingController" >
+    <aura:attribute name="recordId" type="String" />
+
+    <div style="text-align: right">
+        <ui:button label="Close case" press="{!c.closeCase}"/>
+    </div>
+</aura:component>

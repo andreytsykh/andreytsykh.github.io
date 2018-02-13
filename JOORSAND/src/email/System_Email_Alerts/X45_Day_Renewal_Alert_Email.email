@@ -1,0 +1,21 @@
+The following opportunity for {!Opportunity.Account} is up for renewal in 45 days.  Please send the auto-renew notification to the client if prior renewal conversations have not been started.
+
+Opportunity Details:
+{!Opportunity.Name}
+{!Opportunity.Link}
+
+Owner: {!Opportunity.OwnerFullName} ({!Opportunity.Owner_Region__c})
+Stage: {!Opportunity.StageName}
+Projected Close Date: {!Opportunity.CloseDate}
+
+Contract Start Date: {!Opportunity.Contract_Start_Date__c}
+Contract End Date: {!Opportunity.Contract_End_Date__c}
+Contract Months: {!Opportunity.Contract_Months__c}
+
+TCV: {!Opportunity.Amount}
+Recurring Total: {!Opportunity.Recurring_Total__c}
+One Time Fee Total: {!Opportunity.One_Time_Fee_Total__c}
+Transactional Total: {!Opportunity.Transactional_Total__c}
+
+Last Next Steps Update: {!Opportunity.Next_Steps_Changed_Date__c}
+Next Steps: {!Opportunity.Next_Steps__c}

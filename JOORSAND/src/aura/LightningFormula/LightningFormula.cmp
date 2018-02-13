@@ -1,0 +1,12 @@
+<aura:component >
+    <aura:attribute name="label" type="String"/>
+    <aura:attribute name="value" type="String"/>
+    <aura:attribute name="labelClass" type="String" default="slds-form-element__label"/>
+    <aura:attribute name="valueClass" type="String" default="valueClass"/>
+    
+    <label class="{!v.labelClass}">{!v.label}</label>
+    <div class="{!v.valueClass}">
+    	<aura:unescapedHtml value="{!v.value}"/>
+    </div>
+    
+</aura:component>

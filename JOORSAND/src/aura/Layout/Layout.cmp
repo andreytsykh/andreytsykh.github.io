@@ -1,0 +1,38 @@
+<aura:component implements="flexipage:availableForRecordHome,lightning:actionOverride,force:hasRecordId,force:hasSObjectName" access="global" controller="LayoutController">
+	
+	<aura:attribute name="sections" type="LightningSection[]" description="Section list" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="requiredFields" type="String[]"/>
+    <aura:attribute name="currentObject" type="sObject"/>
+    <aura:attribute name="hiddenFieldsHolder" type="Map"/>
+    <aura:attribute name="objectApiName" type="String"/>
+    <aura:attribute name="hasLayouts" type="Boolean" default="false"/>
+    
+    <lightning:spinner aura:id="spinner" class="slds-hide" variant="brand" size="small"/>
+    	
+	<aura:if isTrue="{!v.hasLayouts}">
+    	
+		<aura:iteration items="{!v.sections}" var="section">
+	        <c:LightningSection section="{!section}" aura:id="section" currentObject="{!v.currentObject}" objectApiName="{!v.objectApiName}" refresh="{!c.refresh}"/>
+	    </aura:iteration>
+	    
+	    <aura:set attribute="else">
+	      	<force:recordEdit aura:id="edit" recordId="{!v.recordId}"/>
+	    </aura:set>
+	    
+  	</aura:if>
+  	
+  	<div class="footer active">
+	   <div class="slds-text-align_center forceRecordEditActions">
+	      <div class="actionsContainer">
+	         <button class="slds-button slds-button--neutral uiButton--neutral uiButton forceActionButton" type="button" title="Cancel" onclick="{!c.cancel}">
+	            <span class=" label bBody truncate" dir="ltr">Cancel</span>
+	         </button>
+	         <button class="slds-button slds-button--neutral uiButton--brand uiButton forceActionButton" atype="button" title="Save" onclick="{!c.save}">
+	            <span class=" label bBody truncate" dir="ltr">Save</span>
+	         </button>
+	      </div>
+	   </div>
+	</div>
+</aura:component>

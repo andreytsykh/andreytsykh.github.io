@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Account Name (Lookup)</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Account Names</value>
+        </caseValues>
+        <name>account_name</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Account Counter --></label>
+        <name>Account_Counter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Source From Lead --></label>
+        <name>Account_Source_From_Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Owner --></label>
+        <name>Accountowner__c</name>
+    </fields>
+    <fields>
+        <help><!-- Current ARR under contract. --></help>
+        <label><!-- Contracted ARR --></label>
+        <name>Active_ARR__c</name>
+    </fields>
+    <fields>
+        <help><!-- How well is the customer adopting the platform? --></help>
+        <label><!-- Adoption Rate --></label>
+        <name>Adoption_Rate__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- SMB = 0-50M
+MM = 51-500M
+ENT = 500M+ --></help>
+        <label><!-- Annual Revenue Bucket --></label>
+        <name>Annual_Revenue_Bucket__c</name>
+        <picklistValues>
+            <masterLabel>ENT</masterLabel>
+            <translation><!-- ENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MM</masterLabel>
+            <translation><!-- MM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SMB</masterLabel>
+            <translation><!-- SMB --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Which backend system does this Account use? --></help>
+        <label><!-- Backend System --></label>
+        <name>Backend_System__c</name>
+        <picklistValues>
+            <masterLabel>A2000</masterLabel>
+            <translation><!-- A2000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AccuPOS</masterLabel>
+            <translation><!-- AccuPOS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aims</masterLabel>
+            <translation><!-- Aims --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ApparelMagic Cloud</masterLabel>
+            <translation><!-- ApparelMagic Cloud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ApparelMagic Desktop</masterLabel>
+            <translation><!-- ApparelMagic Desktop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Authorize.NET</masterLabel>
+            <translation><!-- Authorize.NET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blue Cherry</masterLabel>
+            <translation><!-- Blue Cherry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BlueBox Logistics</masterLabel>
+            <translation><!-- BlueBox Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Booker</masterLabel>
+            <translation><!-- Booker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAM Commerce</masterLabel>
+            <translation><!-- CAM Commerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CAP Sellwise</masterLabel>
+            <translation><!-- CAP Sellwise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEGID - OrliWeb</masterLabel>
+            <translation><!-- CEGID - OrliWeb --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Celerant</masterLabel>
+            <translation><!-- Celerant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cin7</masterLabel>
+            <translation><!-- Cin7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CloverStation</masterLabel>
+            <translation><!-- CloverStation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CounterPoint</masterLabel>
+            <translation><!-- CounterPoint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EVO</masterLabel>
+            <translation><!-- EVO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FastMag</masterLabel>
+            <translation><!-- FastMag --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FullCircle</masterLabel>
+            <translation><!-- FullCircle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FusionPOS</masterLabel>
+            <translation><!-- FusionPOS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ILG</masterLabel>
+            <translation><!-- ILG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Impuls</masterLabel>
+            <translation><!-- Impuls --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In House</masterLabel>
+            <translation><!-- In House --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JDEdwards</masterLabel>
+            <translation><!-- JDEdwards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Just Fashion</masterLabel>
+            <translation><!-- Just Fashion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KeyStroke</masterLabel>
+            <translation><!-- KeyStroke --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Left Foot Software</masterLabel>
+            <translation><!-- Left Foot Software --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LightSpeed</masterLabel>
+            <translation><!-- LightSpeed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logistics</masterLabel>
+            <translation><!-- Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MAGO4</masterLabel>
+            <translation><!-- MAGO4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINDBODY</masterLabel>
+            <translation><!-- MINDBODY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MOTR</masterLabel>
+            <translation><!-- MOTR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MYOB</masterLabel>
+            <translation><!-- MYOB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Magento</masterLabel>
+            <translation><!-- Magento --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MicroBiz</masterLabel>
+            <translation><!-- MicroBiz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microsoft Dynamics</masterLabel>
+            <translation><!-- Microsoft Dynamics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Microsoft Navision</masterLabel>
+            <translation><!-- Microsoft Navision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Milano</masterLabel>
+            <translation><!-- Milano --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Momentis</masterLabel>
+            <translation><!-- Momentis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MultiFlex</masterLabel>
+            <translation><!-- MultiFlex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NetSuite</masterLabel>
+            <translation><!-- NetSuite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Odeis</masterLabel>
+            <translation><!-- Odeis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oracle</masterLabel>
+            <translation><!-- Oracle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIM</masterLabel>
+            <translation><!-- PIM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>POS Prophet Systems</masterLabel>
+            <translation><!-- POS Prophet Systems --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Perfect Fit</masterLabel>
+            <translation><!-- Perfect Fit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QuickBooks</masterLabel>
+            <translation><!-- QuickBooks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RICS</masterLabel>
+            <translation><!-- RICS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RLM</masterLabel>
+            <translation><!-- RLM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Edge</masterLabel>
+            <translation><!-- Retail Edge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Pro</masterLabel>
+            <translation><!-- Retail Pro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revel</masterLabel>
+            <translation><!-- Revel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RunIt</masterLabel>
+            <translation><!-- RunIt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAP</masterLabel>
+            <translation><!-- SAP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Safe</masterLabel>
+            <translation><!-- Safe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sage</masterLabel>
+            <translation><!-- Sage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ShopKeep</masterLabel>
+            <translation><!-- ShopKeep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shopify</masterLabel>
+            <translation><!-- Shopify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SimpleConsign</masterLabel>
+            <translation><!-- SimpleConsign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Smyth</masterLabel>
+            <translation><!-- Smyth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Springboard</masterLabel>
+            <translation><!-- Springboard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Square</masterLabel>
+            <translation><!-- Square --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stealth</masterLabel>
+            <translation><!-- Stealth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stripe</masterLabel>
+            <translation><!-- Stripe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Style</masterLabel>
+            <translation><!-- Style --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TOBAS</masterLabel>
+            <translation><!-- TOBAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tally.ERP 9</masterLabel>
+            <translation><!-- Tally.ERP 9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teamwork Retail</masterLabel>
+            <translation><!-- Teamwork Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>The Edge</masterLabel>
+            <translation><!-- The Edge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tower Systems</masterLabel>
+            <translation><!-- Tower Systems --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vend</masterLabel>
+            <translation><!-- Vend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volusion</masterLabel>
+            <translation><!-- Volusion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wasp</masterLabel>
+            <translation><!-- Wasp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WinRetail</masterLabel>
+            <translation><!-- WinRetail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WooCommerce</masterLabel>
+            <translation><!-- WooCommerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zedonk</masterLabel>
+            <translation><!-- Zedonk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zing</masterLabel>
+            <translation><!-- Zing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>easyPOS</masterLabel>
+            <translation><!-- easyPOS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Is this Account a Brand, Retailer or Backend System? --></help>
+        <label><!-- Business Category --></label>
+        <name>Business_Category__c</name>
+        <picklistValues>
+            <masterLabel>Brand</masterLabel>
+            <translation><!-- Brand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partnership</masterLabel>
+            <translation><!-- Partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retailer</masterLabel>
+            <translation><!-- Retailer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- How much CSM support is this client receiving? --></help>
+        <label><!-- CSM Support --></label>
+        <name>CSM_Support__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Competitor Source From Lead --></label>
+        <name>Competitor_Source_From_Lead__c</name>
+    </fields>
+    <fields>
+        <help><!-- Input when the Account Source is Competitor. --></help>
+        <label><!-- Competitor Source --></label>
+        <name>Competitor_Source__c</name>
+        <picklistValues>
+            <masterLabel>Anatwine</masterLabel>
+            <translation><!-- Anatwine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brandboom</masterLabel>
+            <translation><!-- Brandboom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brandlab</masterLabel>
+            <translation><!-- Brandlab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INTURN</masterLabel>
+            <translation><!-- INTURN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Le New Black</masterLabel>
+            <translation><!-- Le New Black --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monkey N Middle</masterLabel>
+            <translation><!-- Monkey N Middle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NuOrder</masterLabel>
+            <translation><!-- NuOrder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ordre</masterLabel>
+            <translation><!-- Ordre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pepperi</masterLabel>
+            <translation><!-- Pepperi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pop Market</masterLabel>
+            <translation><!-- Pop Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Threadvine</masterLabel>
+            <translation><!-- Threadvine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uppler</masterLabel>
+            <translation><!-- Uppler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>World on a Hanger</masterLabel>
+            <translation><!-- World on a Hanger --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Competitor selected by the person who recycled the Account last. --></help>
+        <label><!-- Competitor --></label>
+        <name>Competitor__c</name>
+        <picklistValues>
+            <masterLabel>-- None --</masterLabel>
+            <translation><!-- - -  None - -  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Anatwine</masterLabel>
+            <translation><!-- Anatwine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brandboom</masterLabel>
+            <translation><!-- Brandboom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brandlab</masterLabel>
+            <translation><!-- Brandlab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INTURN</masterLabel>
+            <translation><!-- INTURN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Le New Black</masterLabel>
+            <translation><!-- Le New Black --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monkey N Middle</masterLabel>
+            <translation><!-- Monkey N Middle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NuOrder</masterLabel>
+            <translation><!-- NuOrder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ordre</masterLabel>
+            <translation><!-- Ordre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pepperi</masterLabel>
+            <translation><!-- Pepperi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pop Market</masterLabel>
+            <translation><!-- Pop Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Threadvine</masterLabel>
+            <translation><!-- Threadvine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uppler</masterLabel>
+            <translation><!-- Uppler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>World on a Hanger</masterLabel>
+            <translation><!-- World on a Hanger --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The ideal contract value based on size of the Account. --></help>
+        <label><!-- Contract Goal --></label>
+        <name>Contract_Goal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created From Convert Lead --></label>
+        <name>Created_From_Convert_Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Checkbox --></label>
+        <name>Customer_Checkbox__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date this customer&apos;s original contract started. --></help>
+        <label><!-- Customer Start Date --></label>
+        <name>Customer_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The CSM assigned to the Account. --></help>
+        <label><!-- Customer Success Manager --></label>
+        <name>Customer_Success_Manager__c</name>
+        <relationshipLabel><!-- Accounts (Customer Success Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- How much data services support is this client receiving? --></help>
+        <label><!-- Data Services Support --></label>
+        <name>Data_Services_Support__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Account is using JOOR, but only the free version. --></help>
+        <label><!-- Free Customer --></label>
+        <name>Free_Customer__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date this Account would like to reconnect about working with JOOR. --></help>
+        <label><!-- Future Interest Date --></label>
+        <name>Future_Interest_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does this Account have future interest in working with JOOR? --></help>
+        <label><!-- Future Interest --></label>
+        <name>Future_Interest__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HighRise ID --></label>
+        <name>HighRise_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Integration Manager assigned to the Account. --></help>
+        <label><!-- Integration Manager --></label>
+        <name>Integration_Manager__c</name>
+        <relationshipLabel><!-- Accounts (Integration Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- How much integration support is this client receiving? --></help>
+        <label><!-- Integration Support --></label>
+        <name>Integration_Support__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- How is this client integrating their product catalogue? --></help>
+        <label><!-- Integration Type --></label>
+        <name>Integration_Type__c</name>
+        <picklistValues>
+            <masterLabel>API</masterLabel>
+            <translation><!-- API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flat File</masterLabel>
+            <translation><!-- Flat File --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Which integrations is this customer using? --></help>
+        <label><!-- Integration --></label>
+        <name>Integration__c</name>
+        <picklistValues>
+            <masterLabel>Assortments</masterLabel>
+            <translation><!-- Assortments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Budgets</masterLabel>
+            <translation><!-- Budgets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customers</masterLabel>
+            <translation><!-- Customers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hierarchy</masterLabel>
+            <translation><!-- Hierarchy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inventory</masterLabel>
+            <translation><!-- Inventory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orders</masterLabel>
+            <translation><!-- Orders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Size Curves</masterLabel>
+            <translation><!-- Size Curves --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Styles</masterLabel>
+            <translation><!-- Styles --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- JOOR Gross Merchandise Value --></help>
+        <label><!-- JOOR GMV --></label>
+        <name>JOOR_GMV__c</name>
+    </fields>
+    <fields>
+        <help><!-- This Account&apos;s ID in the JOOR Platform. --></help>
+        <label><!-- JOOR ID --></label>
+        <name>JOOR_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does JOOR pay this partner in the agreement? --></help>
+        <label><!-- JOOR Pays Partner --></label>
+        <name>JOOR_Pays_Partner__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checked off on Accounts important to JOOR&apos;s business. --></help>
+        <label><!-- Key Account --></label>
+        <name>Key_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lifetime Customer Value --></help>
+        <label><!-- LCV --></label>
+        <name>LCV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Activity Date --></label>
+        <name>Last_Activity_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The lifetime number of minutes that have been spent servicing this Account. --></help>
+        <label><!-- Lifetime Service Minutes --></label>
+        <name>Lifetime_Service_Minutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- LinkedIn URL --></label>
+        <name>LinkedIn_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- When is this Account up for renewal? --></help>
+        <label><!-- Next Renewal Date --></label>
+        <name>Next_Renewal_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Region --></label>
+        <name>Owner_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Role --></label>
+        <name>Owner_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partnership Checkbox --></label>
+        <name>Partnership_Checkbox__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date this partner signed a partnership agreement. --></help>
+        <label><!-- Partnership Start Date --></label>
+        <name>Partnership_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- How much is JOOR paying this partner? --></help>
+        <label><!-- Payment Amount --></label>
+        <name>Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the payment a one time fee or a recurring fee? --></help>
+        <label><!-- Payment Type --></label>
+        <name>Payment_Type__c</name>
+        <picklistValues>
+            <masterLabel>One Time Payment</masterLabel>
+            <translation><!-- One Time Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recurring Payment</masterLabel>
+            <translation><!-- Recurring Payment --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The person who recycled the Account. --></help>
+        <label><!-- Recycled By --></label>
+        <name>Recycled_By__c</name>
+        <relationshipLabel><!-- Accounts (Recycled By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- When the Account was recycled. --></help>
+        <label><!-- Recycled Date/Time --></label>
+        <name>Recycled_Date_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- What happened when this Account was last recycled? --></help>
+        <label><!-- Recycled Notes --></label>
+        <name>Recycled_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Who sold in the Account? --></help>
+        <label><!-- Sales Person --></label>
+        <name>Sales_Person__c</name>
+        <relationshipLabel><!-- Accounts (Sales Person) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status Flag --></label>
+        <name>Status_Flag__c</name>
+    </fields>
+    <fields>
+        <help><!-- Recycled = Not Being Worked
+Outreach - Fresh = Recent Activity
+Outreach - Stale = No Activity in 14 days
+
+Rest are self explanatory. --></help>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Customer - Partner</masterLabel>
+            <translation><!-- Customer - Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer - Paying</masterLabel>
+            <translation><!-- Customer - Paying --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Opportunity</masterLabel>
+            <translation><!-- Open Opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outreach - Fresh</masterLabel>
+            <translation><!-- Outreach - Fresh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outreach - Stale</masterLabel>
+            <translation><!-- Outreach - Stale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recycled</masterLabel>
+            <translation><!-- Recycled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This should be checked for accounts that are not paying an annual fee and instead are Legacy clients paying on a commission rate. --></help>
+        <label><!-- TRX Account --></label>
+        <name>TRX_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- From web application form. Mapped to from Lead. --></help>
+        <label><!-- Top 3 Brands/Retailers (1) --></label>
+        <name>Top_3_Brands_Retailers_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- From web application form. Mapped to from Lead. --></help>
+        <label><!-- Top 3 Brands/Retailers (2) --></label>
+        <name>Top_3_Brands_Retailers_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- From web application form. Mapped to from Lead. --></help>
+        <label><!-- Top 3 Brands/Retailers (3) --></label>
+        <name>Top_3_Brands_Retailers_3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Gross Merchandise Value --></help>
+        <label><!-- Total GMV --></label>
+        <name>Total_GMV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type from Lead --></label>
+        <name>Type_from_Lead__c</name>
+    </fields>
+    <fields>
+        <help><!-- Account at the top of this Account&apos;s Hierarchy. --></help>
+        <label><!-- Ultimate Parent Account --></label>
+        <name>Ultimate_Parent_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vertical --></label>
+        <name>Vertical__c</name>
+        <picklistValues>
+            <masterLabel>Activewear/Athleisure</masterLabel>
+            <translation><!-- Activewear/Athleisure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Candles</masterLabel>
+            <translation><!-- Candles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denim</masterLabel>
+            <translation><!-- Denim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eyewear</masterLabel>
+            <translation><!-- Eyewear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Footwear</masterLabel>
+            <translation><!-- Footwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fragrance</masterLabel>
+            <translation><!-- Fragrance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gifts/Tech</masterLabel>
+            <translation><!-- Gifts/Tech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Handbags &amp; Accessories</masterLabel>
+            <translation><!-- Handbags &amp; Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hats</masterLabel>
+            <translation><!-- Hats --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation><!-- Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jewelry</masterLabel>
+            <translation><!-- Jewelry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kids</masterLabel>
+            <translation><!-- Kids --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lingerie/Intimates</masterLabel>
+            <translation><!-- Lingerie/Intimates --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mens</masterLabel>
+            <translation><!-- Mens --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outdoor</masterLabel>
+            <translation><!-- Outdoor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outerwear</masterLabel>
+            <translation><!-- Outerwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RTW</masterLabel>
+            <translation><!-- RTW --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sneakers</masterLabel>
+            <translation><!-- Sneakers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Streetwear</masterLabel>
+            <translation><!-- Streetwear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surf/Skate</masterLabel>
+            <translation><!-- Surf/Skate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swim</masterLabel>
+            <translation><!-- Swim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel</masterLabel>
+            <translation><!-- Travel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Watches</masterLabel>
+            <translation><!-- Watches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Womens</masterLabel>
+            <translation><!-- Womens --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Was Ever a Free Customer --></label>
+        <name>Was_Ever_a_Free_Customer__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many brands are carried by (Retailer) or associated with (Brand) this Account? --></help>
+        <label><!-- # of Brands --></label>
+        <name>of_Brands__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many doors (physical locations) does this Account have? --></help>
+        <label><!-- # of Doors --></label>
+        <name>of_Doors__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many Opportunities have been lost on this Account? --></help>
+        <label><!-- # of Lost Opportunties --></label>
+        <name>of_Lost_Opportunities__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many open Opportunities are currently on this Account? --></help>
+        <label><!-- # of Open Opportunities --></label>
+        <name>of_Open_Opportunities__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many open Renewal Opportunities are currently on this Account? --></help>
+        <label><!-- # of Open Renewals --></label>
+        <name>of_Open_Renewals__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many retailers are carried by (Brand) or associated with (Retailer) this Account? --></help>
+        <label><!-- # of Retailers --></label>
+        <name>of_Retailerr__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many Opportunities have been won on this account? --></help>
+        <label><!-- # of Won Opportunities --></label>
+        <name>of_Won_Opportunities__c</name>
+    </fields>
+    <layouts>
+        <layout>Brand/Retailer - Customer</layout>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Data --></label>
+            <section>Customer Data</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- JOOR Account Team --></label>
+            <section>JOOR Account Team</section>
+        </sections>
+        <sections>
+            <label><!-- Source Data --></label>
+            <section>Source Data</section>
+        </sections>
+        <sections>
+            <label><!-- Top 3 Brands/Retailers --></label>
+            <section>Top 3 Brands/Retailers</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Brand/Retailer - Prospect</layout>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- JOOR Account Team --></label>
+            <section>JOOR Account Team</section>
+        </sections>
+        <sections>
+            <label><!-- Recycle Data --></label>
+            <section>Recycle Data</section>
+        </sections>
+        <sections>
+            <label><!-- Recycled Data 2 --></label>
+            <section>Recycled Data 2</section>
+        </sections>
+        <sections>
+            <label><!-- Source Data --></label>
+            <section>Source Data</section>
+        </sections>
+        <sections>
+            <label><!-- Top 3 Brands/Retailers --></label>
+            <section>Top 3 Brands/Retailers</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Partnership</layout>
+        <sections>
+            <label><!-- Account Summary --></label>
+            <section>Account Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- JOOR Account Team --></label>
+            <section>JOOR Account Team</section>
+        </sections>
+        <sections>
+            <label><!-- Recycle Data --></label>
+            <section>Recycle Data</section>
+        </sections>
+        <sections>
+            <label><!-- Recycled Data 2 --></label>
+            <section>Recycled Data 2</section>
+        </sections>
+        <sections>
+            <label><!-- Source Data --></label>
+            <section>Source Data</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Account ID --></label>
+        <name>Account_ID</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Case Account Details --></label>
+        <name>Case_Account_Details</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Child Account --></label>
+        <name>Child_Account</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Log a Call --></label>
+        <name>Log_a_Call</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Recycle Account --></label>
+        <name>Recycle_Account</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Partnership --></label>
+        <name>Backend_System</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Brand - Customer --></label>
+        <name>Brand_Customer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Brand - Prospect --></label>
+        <name>Brand_Prospect</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Retailer - Customer --></label>
+        <name>Retailer_Customer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Retailer - Prospect --></label>
+        <name>Retailer_Prospect</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Billing Country and Billing Country Code are required. --></errorMessage>
+        <name>Address_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If JOOR is paying the partner, a Payment Amount is required. --></errorMessage>
+        <name>Payment_Amt_Required_if_Paying_Partner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot modify the Key Account field. Please contact your manager or system administrator. --></errorMessage>
+        <name>Restrict_Key_Account_Field_Edit</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Recycle_Account --></label>
+        <name>Recycle_Account</name>
+    </webLinks>
+</CustomObjectTranslation>

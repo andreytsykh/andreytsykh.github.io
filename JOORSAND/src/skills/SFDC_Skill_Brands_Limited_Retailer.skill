@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skill xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <users>
+            <user>ab_joor@ct.com</user>
+            <user>daryna.sobolieva@customertimes.com.joor</user>
+            <user>jack@jooraccess.com</user>
+            <user>jezelle@jooraccess.com</user>
+            <user>katrina@jooraccess.com</user>
+            <user>rmcguire-joor@salesforce.com</user>
+            <user>saara@jooraccess.com</user>
+            <user>tetyana.krupchenko@jooraccess.com</user>
+            <user>yevhenii.alekseiev@jooraccess.com</user>
+        </users>
+    </assignments>
+    <description>Skill for Full and Limited Brands, and Limited Retailer chats</description>
+    <label>SFDC Skill - Brands, Limited Retailer</label>
+</Skill>

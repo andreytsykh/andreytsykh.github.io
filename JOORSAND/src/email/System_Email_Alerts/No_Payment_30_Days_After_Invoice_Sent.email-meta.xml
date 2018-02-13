@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Alert to Opportunity and Account owners, 20 days after an invoice is sent but has not been paid.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>No Payment 20 Days After Invoice Sent</name>
+    <style>none</style>
+    <subject>Invoice for {!Opportunity.Account} has gone unpaid for 20 days</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Case_Assignment_Group_User_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Assignment Group/User ID</shortDescription>
+        <value>00G0x000000GiL1</value>
+    </labels>
+    <labels>
+        <fullName>Case_Assignment_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Assignment Subject</shortDescription>
+        <value>Customer Sync</value>
+    </labels>
+    <labels>
+        <fullName>Case_Assignment_User_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Assignment User ID</shortDescription>
+        <value>0050x000000F5pf</value>
+    </labels>
+    <labels>
+        <fullName>QueueGroupe</fullName>
+        <categories>Trigger</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QueueGroupe</shortDescription>
+        <value>Test</value>
+    </labels>
+    <labels>
+        <fullName>Type_Queue</fullName>
+        <categories>Trigger</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Type Queue</shortDescription>
+        <value>Queue</value>
+    </labels>
+</CustomLabels>

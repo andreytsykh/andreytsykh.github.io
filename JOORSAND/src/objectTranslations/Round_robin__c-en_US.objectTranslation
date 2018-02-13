@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Round Robin</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Round Robin</value>
+    </caseValues>
+    <fields>
+        <label><!-- Day of the week --></label>
+        <name>day_week__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Time --></label>
+        <name>end_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>is_active__c</name>
+    </fields>
+    <fields>
+        <label><!-- last assigned user --></label>
+        <name>last_user__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name Queue --></label>
+        <name>list_Queue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Night users --></label>
+        <name>night_users__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Time --></label>
+        <name>start_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Times of day --></label>
+        <name>time_day__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

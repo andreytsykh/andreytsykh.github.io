@@ -1,0 +1,32 @@
+<aura:component >
+	<aura:attribute name="section" type="LightningSection" description="Section Object" />
+	<aura:attribute name="leftPanel" type="Aura.Component" description="Left panel fields" access="private"/>
+	<aura:attribute name="rightPanel" type="Aura.Component" description="Right panel fields" access="private"/>
+    <aura:attribute name="currentObject" type="sObject"/>
+    <aura:attribute name="refresh" type="Aura.Action"/>
+    <aura:attribute name="objectApiName" type="String"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+	
+	<div class="slds-section slds-is-open">
+	    <h3 class="slds-section__title slds-theme_shade">
+	        <span class="slds-truncate" title="Section Title">{!v.section.title}</span>
+	    </h3>
+	    <div class="slds-section__content" aria-hidden="false">
+	        <div class="slds-form slds-form_compound">
+	            <fieldset class="slds-form-element">
+	                <div class="slds-form-element__group">
+	                    <div class="slds-form-element__row">
+	                        <div class="slds-form-element slds-size_1-of-2 slds-p-horizontal_medium">
+								{!v.leftPanel}
+	                        </div>
+	                        <div class="slds-form-element slds-size_1-of-2 slds-p-horizontal_medium">
+								{!v.rightPanel}
+	                        </div>
+	                    </div>
+	                </div>
+	            </fieldset>
+	        </div>
+	    </div>
+	</div>
+</aura:component>

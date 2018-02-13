@@ -1,0 +1,30 @@
+<messaging:emailTemplate subject="Case: {!relatedTo.casenumber} - {!relatedTo.subject}"
+recipientType="Contact" relatedToType="Case">
+<messaging:htmlEmailBody >
+Hello,<br/>
+<br/>
+We would like to acknowledge that we have received your request.<br/>
+An Integrations team member will be reviewing and reach out to you shortly.<br/>
+<br/>
+Thank you for your patience.<br/>
+<br/>
+Sincerely,<br/>
+JOOR Integrations Support Team<br/>
+<br/>
+
+{!relatedTo.CaseThreadId__c}<br/>
+
+Origin: {!relatedTo.Origin}<br/>
+
+--------------- Original Message --------------- <br/>
+<apex:repeat var="t" value="{!relatedTo.EmailMessages}" rows="1">
+From: {!t.FromAddress} <br/>
+Sent: {!t.MessageDate} <br/>
+To: {!t.ToAddress} <br/>
+Subject: {!t.Subject} <br/>
+
+</apex:repeat>
+
+</messaging:htmlEmailBody>
+
+</messaging:emailTemplate>

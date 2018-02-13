@@ -1,0 +1,5 @@
+The account for {!Opportunity.Account} must be soft disabled on JOOR for being in arrears.
+
+{!Opportunity.Name} 
+{!Opportunity.Link} 
+JOOR ID: {!Account.JOOR_ID__c}

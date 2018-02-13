@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Auto-response rule for Email to Case ID</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>integrations@jooraccess.com</value>
+            </criteriaItems>
+            <notifyCcRecipients>true</notifyCcRecipients>
+            <replyToEmail>joortesting2@gmail.com</replyToEmail>
+            <senderEmail>joortesting@gmail.com</senderEmail>
+            <senderName>integrations@jooraccess.com</senderName>
+            <template>Automation_emails/Integrations_Notification_of_case_creation</template>
+        </ruleEntry>
+    </autoResponseRule>
+    <autoResponseRule>
+        <fullName>Integration Auto Response</fullName>
+        <active>false</active>
+    </autoResponseRule>
+    <autoResponseRule>
+        <fullName>JDT Case Closure</fullName>
+        <active>false</active>
+    </autoResponseRule>
+</AutoResponseRules>

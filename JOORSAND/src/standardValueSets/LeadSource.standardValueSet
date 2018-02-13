@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Outbound - Sales Prospecting</fullName>
+        <default>false</default>
+        <label>Outbound - Sales Prospecting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Outbound - List Purchase</fullName>
+        <default>false</default>
+        <label>Outbound - List Purchase</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Outbound - Tradeshow</fullName>
+        <default>false</default>
+        <label>Outbound - Tradeshow</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inbound - Advertising/PR</fullName>
+        <default>false</default>
+        <label>Inbound - Advertising/PR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inbound - Brand Referral</fullName>
+        <default>false</default>
+        <label>Inbound - Brand Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inbound - Conglomerate Referral</fullName>
+        <default>false</default>
+        <label>Inbound - Conglomerate Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inbound - Integrations Referral</fullName>
+        <default>false</default>
+        <label>Inbound - Integrations Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inbound - Retailer Referral</fullName>
+        <default>false</default>
+        <label>Inbound - Retailer Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inbound - Showroom</fullName>
+        <default>false</default>
+        <label>Inbound - Showroom</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inbound - Tradeshow</fullName>
+        <default>false</default>
+        <label>Inbound - Tradeshow</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inbound - Web Application</fullName>
+        <default>false</default>
+        <label>Inbound - Web Application</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Competitor</fullName>
+        <default>false</default>
+        <label>Competitor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Existing Client</fullName>
+        <default>false</default>
+        <label>Existing Client</label>
+    </standardValue>
+</StandardValueSet>

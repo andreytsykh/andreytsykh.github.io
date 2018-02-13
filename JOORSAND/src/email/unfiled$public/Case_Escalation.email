@@ -1,0 +1,9 @@
+Hi!<br>
+<br>
+A case has been escalated to you. <br>
+<br>
+Link: {!Case.Link} <br>
+Case Record type: {!Case.RecordType} <br>
+Case Escalation Level: {!Case.Escalate_to__c} <br>
+<br>
+Please connect with the Case Owner and log into your account to address the case.<br>

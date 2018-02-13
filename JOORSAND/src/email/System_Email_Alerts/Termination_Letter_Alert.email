@@ -1,0 +1,7 @@
+The {!Opportunity.Type} opportunity for {!Opportunity.Account} has been {!Opportunity.StageName}.
+
+Send a termination letter to the client to inform them that their services have been deactivated on JOOR.
+
+Loss Reason: {!Opportunity.Loss_Reason__c}
+Loss Reason Details:
+{!Opportunity.Loss_Reason_Details__c}

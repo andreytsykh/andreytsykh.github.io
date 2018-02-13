@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>CSM</fullName>
+        <default>false</default>
+        <label>CSM</label>
+    </standardValue>
+    <standardValue>
+        <fullName>JDT</fullName>
+        <default>false</default>
+        <label>JDT</label>
+    </standardValue>
+    <standardValue>
+        <fullName>RSM</fullName>
+        <default>false</default>
+        <label>RSM</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Integrations</fullName>
+        <default>false</default>
+        <label>Integrations</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Support</fullName>
+        <default>false</default>
+        <label>Product Support</label>
+    </standardValue>
+</StandardValueSet>

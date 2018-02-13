@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Account Settings</fullName>
+        <default>false</default>
+        <label>Account Settings</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>API</fullName>
+        <default>false</default>
+        <label>API</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Bug Troubleshooting</fullName>
+        <default>false</default>
+        <label>Bug Troubleshooting</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Connections</fullName>
+        <default>false</default>
+        <label>Connections</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>CSM</fullName>
+        <default>false</default>
+        <label>CSM</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Custom</fullName>
+        <default>false</default>
+        <label>Custom</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Data Request - For Client</fullName>
+        <default>false</default>
+        <label>Data Request - For Client</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Data Request - Internal</fullName>
+        <default>false</default>
+        <label>Data Request - Internal</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Data Submission Portal</fullName>
+        <default>false</default>
+        <label>Data Submission Portal</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Flat File</fullName>
+        <default>false</default>
+        <label>Flat File</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>General Inquiry / Other</fullName>
+        <default>false</default>
+        <label>General Inquiry / Other</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Historical Orders</fullName>
+        <default>false</default>
+        <label>Historical Orders</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>I cannot log in</fullName>
+        <default>false</default>
+        <label>I cannot log in</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Images/Swatches</fullName>
+        <default>false</default>
+        <label>Images/Swatches</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>In-Market Support</fullName>
+        <default>false</default>
+        <label>In-Market Support</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Integrations</fullName>
+        <default>false</default>
+        <label>Integrations</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal</fullName>
+        <default>false</default>
+        <label>Internal</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Inventory</fullName>
+        <default>false</default>
+        <label>Inventory</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>iPad App</fullName>
+        <default>false</default>
+        <label>iPad App</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>JDT Support</fullName>
+        <default>false</default>
+        <label>JDT Support</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Linesheet</fullName>
+        <default>false</default>
+        <label>Linesheet</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Linesheet Management</fullName>
+        <default>false</default>
+        <label>Linesheet Management</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Linesheets / Styles</fullName>
+        <default>false</default>
+        <label>Linesheets / Styles</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Look Into Issue</fullName>
+        <default>false</default>
+        <label>Look Into Issue</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Merge Accounts</fullName>
+        <default>false</default>
+        <label>Merge Accounts</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Merge Requests</fullName>
+        <default>false</default>
+        <label>Merge Requests</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>New Feature/Improvement Request</fullName>
+        <default>false</default>
+        <label>New Feature/Improvement Request</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Order Management</fullName>
+        <default>false</default>
+        <label>Order Management</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Orders</fullName>
+        <default>false</default>
+        <label>Orders</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Order Updates</fullName>
+        <default>false</default>
+        <label>Order Updates</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Orphans</fullName>
+        <default>false</default>
+        <label>Orphans</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Partnership</fullName>
+        <default>false</default>
+        <label>Partnership</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Product</fullName>
+        <default>false</default>
+        <label>Product</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Project Implementation</fullName>
+        <default>false</default>
+        <label>Project Implementation</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Prospect/Sales Support</fullName>
+        <default>false</default>
+        <label>Prospect/Sales Support</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Reports</fullName>
+        <default>false</default>
+        <label>Reports</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Retail</fullName>
+        <default>false</default>
+        <label>Retail</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Retailer Applications</fullName>
+        <default>false</default>
+        <label>Retailer Applications</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Retailer Settings Tasks</fullName>
+        <default>false</default>
+        <label>Retailer Settings Tasks</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Retail Orders</fullName>
+        <default>false</default>
+        <label>Retail Orders</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Style Updates</fullName>
+        <default>false</default>
+        <label>Style Updates</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Training</fullName>
+        <default>false</default>
+        <label>Training</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>UPCs</fullName>
+        <default>false</default>
+        <label>UPCs</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>User Management</fullName>
+        <default>false</default>
+        <label>User Management</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>User Re-education</fullName>
+        <default>false</default>
+        <label>User Re-education</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>User Settings</fullName>
+        <default>false</default>
+        <label>User Settings</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <label>None</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+</StandardValueSet>

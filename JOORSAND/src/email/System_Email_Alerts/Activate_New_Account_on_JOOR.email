@@ -1,0 +1,5 @@
+Payment has been received. The account for {!Opportunity.Account} can be activated and onboarded. 
+
+{!Opportunity.Name} 
+{!Opportunity.Link} 
+JOOR ID: {!Account.JOOR_ID__c}

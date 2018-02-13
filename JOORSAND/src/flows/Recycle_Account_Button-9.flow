@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <decisions>
+        <name>Already_Recycled_Check</name>
+        <label>Already Recycled Check</label>
+        <locationX>173</locationX>
+        <locationY>269</locationY>
+        <defaultConnector>
+            <targetReference>Error_Account_Already_Recycled</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Already Recycled</defaultConnectorLabel>
+        <rules>
+            <name>Not_Recycled</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SourceStatus</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Recycled</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Recycle_Screen</targetReference>
+            </connector>
+            <label>Not Recycled</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Open_Opportunity_Decision</name>
+        <label>Open Opportunity Decision</label>
+        <locationX>175</locationX>
+        <locationY>142</locationY>
+        <defaultConnector>
+            <targetReference>Already_Recycled_Check</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>No Open Opportunities</defaultConnectorLabel>
+        <rules>
+            <name>Open_Opportunity_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>OpenOpportunities</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Error_Open_Opportunity_Found</targetReference>
+            </connector>
+            <label>Open Opportunity Found</label>
+        </rules>
+    </decisions>
+    <description>Triggered by Recycle Account button on the Account. Asks the user what happened last so the next time someone looks at the Account there is context around why it&apos;s recycled.</description>
+    <dynamicChoiceSets>
+        <name>FutureInterestPicklist</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Future_Interest__c</picklistField>
+        <picklistObject>Account</picklistObject>
+    </dynamicChoiceSets>
+    <formulas>
+        <name>CurrentTime</name>
+        <dataType>DateTime</dataType>
+        <expression>NOW()</expression>
+    </formulas>
+    <formulas>
+        <description>The user who clicked the Recycle Account button.</description>
+        <name>CurrentUser</name>
+        <dataType>String</dataType>
+        <expression>{!$User.Id}</expression>
+    </formulas>
+    <interviewLabel>Recycle Account Button {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Recycle Account Button</label>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Check_Account_for_Open_Opportunities</name>
+        <label>Check Account for Open Opportunities</label>
+        <locationX>176</locationX>
+        <locationY>47</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Open_Opportunity_Decision</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>AccountID</elementReference>
+            </value>
+        </filters>
+        <object>Account</object>
+        <outputAssignments>
+            <assignToReference>SourceStatus</assignToReference>
+            <field>Status__c</field>
+        </outputAssignments>
+        <outputAssignments>
+            <assignToReference>OpenOpportunities</assignToReference>
+            <field>of_Open_Opportunities__c</field>
+        </outputAssignments>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Account_Recycle_Data</name>
+        <label>Update Account Recycle Data</label>
+        <locationX>169</locationX>
+        <locationY>483</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>AccountID</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Future_Interest_Date__c</field>
+            <value>
+                <elementReference>Future_Interest_Date</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Future_Interest__c</field>
+            <value>
+                <elementReference>FutureInterestPicklist</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Recycled_By__c</field>
+            <value>
+                <elementReference>CurrentUser</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Recycled_Date_Time__c</field>
+            <value>
+                <elementReference>CurrentTime</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Recycled_Notes__c</field>
+            <value>
+                <elementReference>Recycle_Notes</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status__c</field>
+            <value>
+                <stringValue>Recycled</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <screens>
+        <name>Error_Account_Already_Recycled</name>
+        <label>Error Account Already Recycled</label>
+        <locationX>473</locationX>
+        <locationY>264</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>ErrorText3</name>
+            <fieldText>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:16px&quot; COLOR=&quot;#FF0000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;B&gt;**ACCOUNT IS ALREADY RECYCLED**&lt;/B&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+    </screens>
+    <screens>
+        <name>Error_Open_Opportunity_Found</name>
+        <label>Error Open Opportunity Found</label>
+        <locationX>475</locationX>
+        <locationY>143</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>ErrorText1</name>
+            <fieldText>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:16px&quot; COLOR=&quot;#FF0000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;B&gt;**AT LEAST 1 OPEN OPPORTUNITY FOUND**&lt;/B&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>ErrorText2</name>
+            <fieldText>&lt;DIV ALIGN=&quot;LEFT&quot;&gt;&lt;FONT FACE=&quot;Arial&quot; STYLE=&quot;font-size:16px&quot; COLOR=&quot;#FF0000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;&gt;&lt;B&gt;** CANNOT RECYCLE ACCOUNT **&lt;/B&gt;&lt;/FONT&gt;&lt;/DIV&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+    </screens>
+    <screens>
+        <name>Recycle_Screen</name>
+        <label>Recycle Screen</label>
+        <locationX>170</locationX>
+        <locationY>389</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Update_Account_Recycle_Data</targetReference>
+        </connector>
+        <fields>
+            <name>Future_Interest</name>
+            <choiceReferences>FutureInterestPicklist</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Future Interest?</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>spacer</name>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Future_Interest_Date</name>
+            <dataType>Date</dataType>
+            <fieldText>Future Interest Date</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+            <validationRule>
+                <errorMessage>If there is Future Interest, a Future Interest Date is required.</errorMessage>
+                <formulaExpression>IF(
+AND(
+ISBLANK({!Future_Interest_Date}),
+ISPICKVAL({!FutureInterestPicklist}, &quot;Yes&quot;)
+),
+FALSE,
+TRUE)</formulaExpression>
+            </validationRule>
+        </fields>
+        <fields>
+            <name>spacer2</name>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Recycle_Notes</name>
+            <fieldText>Recycle Notes</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <helpText>What happened last on this Account?</helpText>
+            <isRequired>true</isRequired>
+        </fields>
+    </screens>
+    <startElementReference>Check_Account_for_Open_Opportunities</startElementReference>
+    <variables>
+        <name>AccountID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Assigned the # of Open Opportunities from the Account where the Recycle Account button was clicked.</description>
+        <name>OpenOpportunities</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+    <variables>
+        <description>To check if the Account is already Recycled.</description>
+        <name>SourceStatus</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

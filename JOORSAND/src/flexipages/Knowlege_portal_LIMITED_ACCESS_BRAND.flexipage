@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-family: helvetica; font-size: 22px;&quot;&gt;Browse help topics&lt;/b&gt;&lt;/p&gt;&lt;p&gt; &lt;/p&gt;</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:richTextInline</componentName>
+        </componentInstances>
+        <name>header</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;p&gt;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.General.1}&quot; /&gt; &lt;a href=&quot;https://sandbox-jooraccess.cs95.force.com/customer/s/topic/0TO0x000000013sGAA/general-brands&quot; target=&quot;_self&quot; style=&quot;font-family: helvetica; color: rgb(102, 163, 224); font-size: 16px;&quot;&gt;General Brands&lt;/a&gt;&lt;span style=&quot;font-family: helvetica; color: rgb(102, 163, 224); font-size: 16px;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.Connections_for_all_except_Full_Acc.1}&quot; /&gt; &lt;/span&gt;&lt;a href=&quot;https://sandbox-jooraccess.cs95.force.com/customer/s/topic/0TO0x000000013uGAA/connecting-to-my-retailers&quot; target=&quot;_self&quot; style=&quot;font-family: helvetica; color: rgb(102, 163, 224); font-size: 16px;&quot;&gt;Connecting to My Retailers&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: helvetica; color: rgb(102, 163, 224); font-size: 16px;&quot;&gt;&amp;nbsp;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.Data_Uploader.1}&quot; /&gt; &lt;/span&gt;&lt;a href=&quot;https://sandbox-jooraccess.cs95.force.com/customer/s/topic/0TO0x000000013vGAA/data-uploader-brands&quot; target=&quot;_self&quot; style=&quot;font-family: helvetica; color: rgb(102, 163, 224); font-size: 16px;&quot;&gt;Data Uploader Brands&lt;/a&gt;&lt;span style=&quot;font-family: helvetica; color: rgb(102, 163, 224); font-size: 16px;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.FAQ_BRAND2.1}&quot; /&gt; &lt;/span&gt;&lt;a href=&quot;https://sandbox-jooraccess.cs95.force.com/customer/s/topic/0TO0x000000013tGAA/faq-brands&quot; target=&quot;_self&quot; style=&quot;font-family: helvetica; color: rgb(102, 163, 224); font-size: 16px;&quot;&gt;FAQ Brands&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: helvetica; color: rgb(102, 163, 224); font-size: 16px;&quot;&gt;&amp;nbsp;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.JOOR_Data_Standards.1}&quot; /&gt; &lt;/span&gt;&lt;a href=&quot;https://sandbox-jooraccess.cs95.force.com/customer/s/topic/0TO0x000000016NGAQ/joor-data-standards-brands&quot; target=&quot;_self&quot; style=&quot;font-family: helvetica; color: rgb(102, 163, 224); font-size: 16px;&quot;&gt;JOOR Data Standards&lt;/a&gt;&lt;/p&gt;</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:richTextInline</componentName>
+        </componentInstances>
+        <name>content</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <name>footer</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>description</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>metaTags</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>LIMITED ACCESS BRAND</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:seoAssistant</componentName>
+        </componentInstances>
+        <name>sfdcHiddenRegion</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>LIMITED ACCESS BRAND</masterLabel>
+    <template>
+        <name>siteforce:sldsOneColLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

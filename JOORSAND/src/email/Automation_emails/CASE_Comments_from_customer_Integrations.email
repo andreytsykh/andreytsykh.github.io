@@ -1,0 +1,10 @@
+Hi, 
+
+New email from customer was recieved for the next case: {!Case.CaseNumber}   
+
+{!Case.Link} 
+
+Please review. 
+Thanks 
+
+{!Case.Thread_Id}

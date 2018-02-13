@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>General</label>
+                <name>General_All_Brands</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Connections &amp; Customer Specific Data</label>
+                <name>Connections_and_Customer_Specific_Data</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Linesheets</label>
+                <name>Linesheets</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Orders</label>
+                <name>Orders</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Inventory</label>
+                <name>Inventory</name>
+            </dataCategory>
+            <dataCategory>
+                <label>JOOR Brand App</label>
+                <name>Brand_iPad_App</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Reports</label>
+                <name>Reports</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Integrations</label>
+                <name>Integrations</name>
+            </dataCategory>
+            <dataCategory>
+                <label>JOOR Data Standards</label>
+                <name>JOOR_Data_Standard_All_Brands</name>
+            </dataCategory>
+            <dataCategory>
+                <label>FAQ</label>
+                <name>FAQ_All_Brands</name>
+            </dataCategory>
+            <dataCategory>
+                <label>JOOR Security Protocol</label>
+                <name>JOOR_Security_Protocol</name>
+            </dataCategory>
+            <label>Full Access Brands</label>
+            <name>Full_Access_Brands</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>General</label>
+                <name>General_All_Retailers</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Connections &amp; Brand-Specific Data</label>
+                <name>Connections_All_Retailers</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Notifications and Messages</label>
+                <name>Notifications_and_Messages_All_Retailer</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Orders and Assortments</label>
+                <name>Orders_and_Assortments_All_Retailers</name>
+            </dataCategory>
+            <dataCategory>
+                <label>JOOR Retailer App</label>
+                <name>Retail_iPad_App_All_Retailers</name>
+            </dataCategory>
+            <dataCategory>
+                <label>JOOR Security Protocol</label>
+                <name>JOOR_Security_Protocol_All_Retailers</name>
+            </dataCategory>
+            <dataCategory>
+                <label>FAQ</label>
+                <name>FAQ_All_Retailers</name>
+            </dataCategory>
+            <label>Full Access Retailers</label>
+            <name>Full_Access_Retailers</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>General</label>
+                <name>General_Retailers</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Connecting to My Brands</label>
+                <name>Connections_Retailers</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Notifications and Messages</label>
+                <name>Notifications_and_Messages_Retailers</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Orders</label>
+                <name>Orders_Retailers</name>
+            </dataCategory>
+            <dataCategory>
+                <label>FAQ</label>
+                <name>FAQ_Retailers</name>
+            </dataCategory>
+            <label>Limited Access Retailers</label>
+            <name>Limited_Access_Retailers</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>General</label>
+                <name>General_Brands</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Connecting to My Retailers</label>
+                <name>Connecting_to_My_Retailers</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Data Uploader</label>
+                <name>Data_Uploader_Brands</name>
+            </dataCategory>
+            <dataCategory>
+                <label>FAQ</label>
+                <name>FAQ_Brands</name>
+            </dataCategory>
+            <dataCategory>
+                <label>JOOR Data Standards</label>
+                <name>JOOR_Data_Standards_Brands</name>
+            </dataCategory>
+            <label>Limited Access Brands</label>
+            <name>Limited_Access_Brands</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>Article type</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

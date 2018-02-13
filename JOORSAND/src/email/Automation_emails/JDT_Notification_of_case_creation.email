@@ -1,0 +1,11 @@
+Dear {!Case.Contact_FirstName__c},
+
+We would like to acknowledge that we have received your request.
+Joor Data team member will be reviewing and reach out to you shortly.
+
+{!Case.Thread_Id}
+
+Thank you for your patience.
+
+Sincerely,
+JOOR Team

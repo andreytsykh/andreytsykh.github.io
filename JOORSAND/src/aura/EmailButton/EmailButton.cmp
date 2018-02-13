@@ -1,0 +1,5 @@
+<aura:component controller="TemplateService" implements="force:hasRecordId,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    
+    
+    <lightning:button onclick="{!c.openTemplate}" label="Send attached articles"/>
+</aura:component>

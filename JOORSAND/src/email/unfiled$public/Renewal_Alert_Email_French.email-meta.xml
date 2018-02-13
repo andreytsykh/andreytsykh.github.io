@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email template to send to clients whose contracts are expiring. (French)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>JOOR_Inc</letterhead>
+    <name>Renewal Alert Email - French</name>
+    <style>formalLetter</style>
+    <subject>Renouvellement de votre abonnement JOOR</subject>
+    <textOnly>Cher,
+
+Merci pour votre confiance et votre fidélité envers JOOR. Nous souhaitons vous informer que selon notre contrat, votre abonnement annuel sera automatiquement renouvelé le {!Opportunity.Contract_Start_Date__c}.
+
+Nous sommes ravis de notre partenariat et nous réjouissons d&apos;une nouvelle année pleine de réussite!
+
+Cordialement,
+L&apos;Équipe JOOR
+Copyright © 2017 JOOR, Inc.  All rights reserved.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

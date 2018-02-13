@@ -1,0 +1,9 @@
+Hi, 
+
+The Case # {!Case.CaseNumber} has been created. 
+
+Please see it by the next link:  {!Case.Link} 
+
+Thanks
+
+{!Case.Thread_Id}

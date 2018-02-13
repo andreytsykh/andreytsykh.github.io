@@ -1,0 +1,5 @@
+Please note that Case # {!Case.CaseNumber} has been New for 48 hours. 
+
+{!Case.Link} 
+
+{!Case.Thread_Id}

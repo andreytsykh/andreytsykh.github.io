@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Showroom</fullName>
+        <default>false</default>
+        <label>Showroom</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Brand</fullName>
+        <default>false</default>
+        <label>Brand</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Distributor</fullName>
+        <default>false</default>
+        <label>Distributor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Conglomerate</fullName>
+        <default>false</default>
+        <label>Conglomerate</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Department Store</fullName>
+        <default>false</default>
+        <label>Department Store</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Franchise</fullName>
+        <default>false</default>
+        <label>Franchise</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Specialty Store</fullName>
+        <default>false</default>
+        <label>Specialty Store</label>
+    </standardValue>
+    <standardValue>
+        <fullName>E-Commerce</fullName>
+        <default>false</default>
+        <label>E-Commerce</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Off-Price</fullName>
+        <default>false</default>
+        <label>Off-Price</label>
+    </standardValue>
+    <standardValue>
+        <fullName>POS</fullName>
+        <default>false</default>
+        <label>POS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ERP</fullName>
+        <default>false</default>
+        <label>ERP</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reseller</fullName>
+        <default>false</default>
+        <label>Reseller</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+</StandardValueSet>

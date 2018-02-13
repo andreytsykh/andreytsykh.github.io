@@ -1,0 +1,12 @@
+.THIS select {
+	line-height: 1.875rem;
+    min-height: calc(2.125rem + 2px);
+}
+
+.THIS .slds-size_1-of-2 .uiInput {
+    margin-bottom: 10px;
+}
+
+.THIS .slds-section__title {
+    padding-left: 15px
+}

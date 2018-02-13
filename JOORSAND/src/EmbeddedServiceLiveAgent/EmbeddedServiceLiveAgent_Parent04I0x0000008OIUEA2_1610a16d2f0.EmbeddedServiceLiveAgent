@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmbeddedServiceLiveAgent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <embeddedServiceConfig>04I0x0000008OIU</embeddedServiceConfig>
+    <liveChatButton>5730x000000CaSU</liveChatButton>
+    <liveChatDeployment>5720x000000CaRR</liveChatDeployment>
+    <masterLabel>EmbeddedServiceLiveAgent_Parent04I0x0000008OIUEA2_1610a16d2f0</masterLabel>
+    <prechatEnabled>true</prechatEnabled>
+    <prechatJson>{&quot;liveAgentConfigId&quot;:&quot;08h0x0000008OIPAA2&quot;,&quot;scenario&quot;:&quot;Service&quot;,&quot;objects&quot;:[{&quot;objectTypeId&quot;:&quot;Contact&quot;,&quot;position&quot;:1,&quot;fields&quot;:[{&quot;fieldApiName&quot;:&quot;Name&quot;,&quot;required&quot;:true,&quot;position&quot;:0},{&quot;fieldApiName&quot;:&quot;Email&quot;,&quot;required&quot;:true,&quot;position&quot;:1},{&quot;fieldApiName&quot;:&quot;Contact_Type__c&quot;,&quot;required&quot;:false,&quot;position&quot;:2},{&quot;fieldApiName&quot;:&quot;Access_Type__c&quot;,&quot;required&quot;:false,&quot;position&quot;:3},{&quot;fieldApiName&quot;:&quot;AccountNamePrechat__c&quot;,&quot;required&quot;:true,&quot;position&quot;:4}],&quot;recordTypeId&quot;:&quot;012000000000000AAA&quot;},{&quot;objectTypeId&quot;:&quot;Case&quot;,&quot;recordTypeId&quot;:&quot;01246000000H45YAAS&quot;,&quot;position&quot;:2,&quot;fields&quot;:[{&quot;fieldApiName&quot;:&quot;Description_for_pre_chat_form__c&quot;,&quot;required&quot;:true,&quot;position&quot;:5},{&quot;fieldApiName&quot;:&quot;What_can_we_help_with__c&quot;,&quot;required&quot;:false,&quot;customLabel&quot;:&quot;What can we help with?&quot;,&quot;placeholderText&quot;:&quot;&quot;,&quot;position&quot;:6}]}]}</prechatJson>
+    <scenario>Service</scenario>
+</EmbeddedServiceLiveAgent>

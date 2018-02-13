@@ -1,0 +1,23 @@
+Hello,
+
+We would like to acknowledge that we have received your request.
+An Integrations team member will be reviewing and reach out to you shortly.
+
+Please respond to this email.
+
+Thank you for your patience.
+
+Sincerely,
+JOOR Integrations Support Team
+
+{!Case.Thread_Id}
+
+
+
+--------------- Original Message ---------------
+From: {!EmailMessage.FromAddress}
+Sent: {!EmailMessage.MessageDate}
+To: {!EmailMessage.ToAddress}
+Subject: {!EmailMessage.Subject}
+
+{!EmailMessage.TextBody}

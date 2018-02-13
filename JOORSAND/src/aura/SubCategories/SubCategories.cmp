@@ -1,0 +1,14 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes,force:hasRecordId" access="global" controller="SubCategoriesController">
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="recordId" type="String"/>
+    
+    
+    <aura:attribute name="CategotyName" type="String"/>
+    <aura:attribute name="CategotyAPIName" type="String"/>
+
+
+    <div class="header">
+      {!v.CategotyAPIName} test2
+    </div>
+</aura:component>

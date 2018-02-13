@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Alert sent 45 days before renewal as a reminder to send client 45 day renewal notice.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>45 Day Renewal Alert Email</name>
+    <style>none</style>
+    <subject>Send 45 day auto-renew notice for {!Opportunity.Account}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DashboardFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <folderShares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>augustin@jooraccess.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>caroline@jooraccess.com</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <name>Augustin&apos;s current dashboard</name>
+</DashboardFolder>

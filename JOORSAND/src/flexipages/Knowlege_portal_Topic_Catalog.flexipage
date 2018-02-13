@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>bannerText</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>bannerTextWithKnowledge</name>
+                <value>Explore other &lt;a href=&quot;javascript:void(0)&quot; class=&quot;headlineArticles&quot;&gt;articles&lt;/a&gt; and &lt;a href=&quot;javascript:void(0)&quot; class=&quot;headlineDiscussions&quot;&gt;discussions&lt;/a&gt; on this topic.</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>bannerTextWithoutKnowledge</name>
+                <value>Explore other &lt;a href=&quot;javascript:void(0)&quot; class=&quot;headlineDiscussions&quot;&gt;discussions&lt;/a&gt; on this topic.</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>pageType</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>searchTerm</name>
+                <value>{!searchString}</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>showSubTopics</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Browse help topics</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>topicId</name>
+                <value>{!topicId}</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>uniqueNameOrId</name>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:headline</componentName>
+        </componentInstances>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;p&gt;&lt;a href=&quot;https://sandbox-jooraccess.cs95.force.com/customer/s/topic/0TO0x000000013xGAA/general-all-retailers&quot; target=&quot;_blank&quot;&gt;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.General.1}&quot; /&gt;&lt;/a&gt;&lt;span style=&quot;font-size: 16px; font-family: helvetica; color: rgb(102, 163, 224);&quot;&gt;General&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.FAQ_BRAND.1}&quot; /&gt;&lt;span style=&quot;font-size: 16px; font-family: helvetica; color: rgb(102, 163, 224);&quot;&gt;FAQ Brand&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:richTextInline</componentName>
+        </componentInstances>
+        <name>header</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <name>content</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <name>footer</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>description</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>metaTags</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>Topic Catalog</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:seoAssistant</componentName>
+        </componentInstances>
+        <name>sfdcHiddenRegion</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>Topic Catalog</masterLabel>
+    <template>
+        <name>siteforce:sldsOneColLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

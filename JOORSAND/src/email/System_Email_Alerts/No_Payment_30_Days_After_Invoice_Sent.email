@@ -1,0 +1,21 @@
+The following opportunity for {!Opportunity.Account} has had an invoice outstanding for 30 days:
+
+{!Opportunity.Name}
+{!Opportunity.Link}
+
+Owner: {!Opportunity.OwnerFullName} ({!Opportunity.Owner_Region__c})
+
+Contract Start Date: {!Opportunity.Contract_Start_Date__c}
+Contract End Date: {!Opportunity.Contract_End_Date__c}
+Contract Months: {!Opportunity.Contract_Months__c}
+
+TCV: {!Opportunity.Amount}
+Recurring Total: {!Opportunity.Recurring_Total__c}
+One Time Fee Total: {!Opportunity.One_Time_Fee_Total__c}
+Transactional Total: {!Opportunity.Transactional_Total__c}
+
+Billing Contact:
+
+{!Opportunity.Billing_Contact__c}
+{!Opportunity.Billing_Contact_Email__c}
+{!Opportunity.Billing_Contact_Phone__c}

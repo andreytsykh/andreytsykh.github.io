@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Alert to account owners to disable accounts on JOOR.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Disable Account Alert</name>
+    <style>none</style>
+    <subject>Disable {!Opportunity.Account} on JOOR.</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,22 @@
+The following opportunity for {!Opportunity.Account} has been won with Integration work required:
+
+{!Opportunity.Name}
+{!Opportunity.Link}
+Closed By: {!Opportunity.OwnerFullName} ({!Opportunity.Owner_Region__c})
+
+Contract Start: {!Opportunity.Contract_Start_Date__c}
+Contract End: {!Opportunity.Contract_End_Date__c}
+Contract Months: {!Opportunity.Contract_Months__c}
+
+TCV: {!Opportunity.Amount}
+Recurring Total: {!Opportunity.Recurring_Total__c}
+One Time Fee Total: {!Opportunity.One_Time_Fee_Total__c}
+Transactional Total: {!Opportunity.Transactional_Total__c}
+
+*** INTEGRATION ***
+
+Full Integration: {!Opportunity.Full_Integration__c}
+Order Export Sync: {!Opportunity.Order_Export_Sync__c}
+Style Sync: {!Opportunity.Style_Sync__c}
+Customer Sync: {!Opportunity.Customer_Sync__c}
+Inventory Sync: {!Opportunity.Inventory_Sync__c}

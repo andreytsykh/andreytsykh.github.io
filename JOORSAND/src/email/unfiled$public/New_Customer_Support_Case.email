@@ -1,0 +1,10 @@
+Hello! <br>
+<br>
+New Customer Support Case has been created.<br>
+<br>
+Account: {!Case.Account__c}<br>
+Full Name: {!Case.Full_Name__c}<br>
+Email: {!Case.Email__c}<br>
+Case Reason: {!Case.Reason}<br>
+Description: {!Case.Description}<br>
+Link to the case: {!Case.Link}<br>

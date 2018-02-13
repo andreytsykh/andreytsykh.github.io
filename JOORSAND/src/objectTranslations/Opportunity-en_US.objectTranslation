@@ -1,0 +1,1365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- At Risk Details - Ren - left --></label>
+        <name>At_Risk_Details_Ren_left</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Billing Details - NB - left --></label>
+        <name>Billing_Details_NB_left</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Billing Details - NB - right --></label>
+        <name>Billing_Details_NB_right</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Billing Details - Ren - left --></label>
+        <name>Billing_Details_Ren_left</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Billing Details - Ren - right --></label>
+        <name>Billing_Details_Ren_right</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deal Financials - NB - left --></label>
+        <name>Deal_Financials_NB_left</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deal Financials - NB - right --></label>
+        <name>Deal_Financials_NB_right</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deal Financials - Ren - left --></label>
+        <name>Deal_Financials_Ren_left</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deal Financials - Ren - right --></label>
+        <name>Deal_Financials_Ren_right</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deal Management - NB - left --></label>
+        <name>Deal_Management_NB_left</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deal Management - NB - right --></label>
+        <name>Deal_Management_NB_right</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deal Management - Ren - left --></label>
+        <name>Deal_Management_Ren_left</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deal Management - Ren - right --></label>
+        <name>Deal_Management_Ren_right</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Key Players - NB - left --></label>
+        <name>Key_Players_NB_left</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Key Players - NB - right --></label>
+        <name>Key_Players_NB_right</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Key Players - Ren - left --></label>
+        <name>Key_Players_Ren_left</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Key Players - Ren - right --></label>
+        <name>Key_Players_Ren_right</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Loss Details - NB - left --></label>
+        <name>Loss_Details_NB_left</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Loss Details - NB - right --></label>
+        <name>Loss_Details_NB_right</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Loss Details - Ren - left --></label>
+        <name>Loss_Details_Ren_left</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Loss Details - Ren - right --></label>
+        <name>Loss_Details_Ren_right</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Marketing Details - NB - left --></label>
+        <name>Marketing_Details_NB_left</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Marketing Details - NB - right --></label>
+        <name>Marketing_Details_NB_right</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Marketing Details - Ren - left --></label>
+        <name>Marketing_Details_Ren_left</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Marketing Details - Ren - right --></label>
+        <name>Marketing_Details_Ren_right</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Opportunity Information - NB - left --></label>
+        <name>Opportunity_Information_NB_left</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Opportunity Information - NB - right --></label>
+        <name>Opportunity_Information_NB_right</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Opportunity Information - Ren - left --></label>
+        <name>Opportunity_Information_Ren_left</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Opportunity Information - Ren - right --></label>
+        <name>Opportunity_Information_Ren_right</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Pricing Matrix - NB - left --></label>
+        <name>Pricing_Matrix_NB_left</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Pricing Matrix - NB - right --></label>
+        <name>Pricing_Matrix_NB_right</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Pricing Matrix - Ren - left --></label>
+        <name>Pricing_Matrix_Ren_left</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Pricing Matrix - Ren - right --></label>
+        <name>Pricing_Matrix_Ren_right</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Products and Brands/Retailers Count - NB - left --></label>
+        <name>Products_and_Brands_Count_NB_left</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Products and Brands/Retailers Count - NB - right --></label>
+        <name>Products_and_Brands_Count_NB_right</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Products and Brands/Retailers Count - Ren - left --></label>
+        <name>Products_and_Brands_Count_Ren_left</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Products and Brands/Retailers Count - Ren - right --></label>
+        <name>Products_and_Brands_Count_Ren_right</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Source Opportunity Details - Ren - left --></label>
+        <name>Source_Opportunity_Details_Ren_left</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- System Information - NB - left --></label>
+        <name>System_Information_NB_left</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- System Information - NB - right --></label>
+        <name>System_Information_NB_right</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- System Information - Ren - left --></label>
+        <name>System_Information_Ren_left</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- System Information - Ren - right --></label>
+        <name>System_Information_Ren_right</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- test --></label>
+        <name>test</name>
+    </fieldSets>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>TCV</value>
+        </caseValues>
+        <name>amount_opportunity</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- ARR Weighted --></label>
+        <name>ARR_Weighted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Annual Recurring Revenue --></help>
+        <label><!-- ARR --></label>
+        <name>ARR__c</name>
+    </fields>
+    <fields>
+        <help><!-- Calculates the payment amount per invoice based on TCV and Number of Payments. --></help>
+        <label><!-- Amount per Payment --></label>
+        <name>Amount_per_Payment__c</name>
+    </fields>
+    <fields>
+        <help><!-- The % discount from what the Pricing Matrix is saying against what you currently value the Opportunity at. --></help>
+        <label><!-- Annual Discount from Rate Card --></label>
+        <name>Annual_Discount_from_Rate_Card__c</name>
+    </fields>
+    <fields>
+        <help><!-- The suggested annual fee for this customer per the Pricing Matrix. --></help>
+        <label><!-- Annual Fee Quote --></label>
+        <name>Annual_Fee_Quote__c</name>
+    </fields>
+    <fields>
+        <help><!-- When the Renewal was marked At Risk. --></help>
+        <label><!-- At Risk Date --></label>
+        <name>At_Risk_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Red = At Risk
+Green = Not At Risk --></help>
+        <label><!-- At Risk Flag --></label>
+        <name>At_Risk_Flag__c</name>
+    </fields>
+    <fields>
+        <help><!-- Why is this Renewal at risk? What&apos;s happening with the Account? --></help>
+        <label><!-- At Risk Notes --></label>
+        <name>At_Risk_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- (RED ACCOUNT) Check this to indicate this Renewal is at risk of not closing. --></help>
+        <label><!-- At Risk --></label>
+        <name>At_Risk__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will this customer Auto Renew? --></help>
+        <label><!-- Auto Renew --></label>
+        <name>Auto_Renew__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing Contact Email --></label>
+        <name>Billing_Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Contact Phone --></label>
+        <name>Billing_Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <help><!-- Who should finance send invoices and contact about billing inquiries? --></help>
+        <label><!-- Billing Contact --></label>
+        <name>Billing_Contact__c</name>
+        <relationshipLabel><!-- Opportunities (BIlling Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Indicate any other detail or non-standard terms in the billing agreement for finance. --></help>
+        <label><!-- Billing Details --></label>
+        <name>Billing_Details__c</name>
+    </fields>
+    <fields>
+        <help><!-- How long after receiving the invoice does the client have to pay? --></help>
+        <label><!-- Billing Term --></label>
+        <name>Billing_Term__c</name>
+        <picklistValues>
+            <masterLabel>Due on Receipt</masterLabel>
+            <translation><!-- Due on Receipt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 120</masterLabel>
+            <translation><!-- Net 120 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 150</masterLabel>
+            <translation><!-- Net 150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 180</masterLabel>
+            <translation><!-- Net 180 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 30</masterLabel>
+            <translation><!-- Net 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 60</masterLabel>
+            <translation><!-- Net 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 90</masterLabel>
+            <translation><!-- Net 90 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Brand/Retailer Icon --></label>
+        <name>Brand_Retailer_Icon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brands/Entity (Migration ONLY) --></label>
+        <name>Brands_Entity_Migration_ONLY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget Confirmed --></label>
+        <name>Budget_Confirmed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Above The Line includes Director title and above. --></help>
+        <label><!-- Champion Authority --></label>
+        <name>Champion_Authority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Champion Title --></label>
+        <name>Champion_Title__c</name>
+    </fields>
+    <fields>
+        <help><!-- Who is our main contact on the prospect side? --></help>
+        <label><!-- Champion --></label>
+        <name>Champion__c</name>
+        <relationshipLabel><!-- Opportunities (Champion) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Churn Stage --></label>
+        <name>Churn_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Month --></label>
+        <name>Close_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Quarter --></label>
+        <name>Close_Quarter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Year --></label>
+        <name>Close_Year__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checked if this opportunity is set to close this quarter. --></help>
+        <label><!-- Closing This Quarter --></label>
+        <name>Closing_This_Quarter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Input when the Account Source is Competitor. --></help>
+        <label><!-- Competitor Source --></label>
+        <name>Competitor_Source__c</name>
+        <picklistValues>
+            <masterLabel>Anatwine</masterLabel>
+            <translation><!-- Anatwine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brandboom</masterLabel>
+            <translation><!-- Brandboom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brandlab</masterLabel>
+            <translation><!-- Brandlab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INTURN</masterLabel>
+            <translation><!-- INTURN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Le New Black</masterLabel>
+            <translation><!-- Le New Black --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Momentis</masterLabel>
+            <translation><!-- Momentis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monkey N Middle</masterLabel>
+            <translation><!-- Monkey N Middle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NuOrder</masterLabel>
+            <translation><!-- NuOrder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ordre</masterLabel>
+            <translation><!-- Ordre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pepperi</masterLabel>
+            <translation><!-- Pepperi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pop Market</masterLabel>
+            <translation><!-- Pop Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Threadvine</masterLabel>
+            <translation><!-- Threadvine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uppler</masterLabel>
+            <translation><!-- Uppler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>World on a Hanger</masterLabel>
+            <translation><!-- World on a Hanger --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select when Loss Reason contains Competitor. --></help>
+        <label><!-- Competitor --></label>
+        <name>Competitor__c</name>
+        <picklistValues>
+            <masterLabel>Anatwine</masterLabel>
+            <translation><!-- Anatwine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brandboom</masterLabel>
+            <translation><!-- Brandboom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brandlab</masterLabel>
+            <translation><!-- Brandlab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>INTURN</masterLabel>
+            <translation><!-- INTURN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Le New Black</masterLabel>
+            <translation><!-- Le New Black --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Momentis</masterLabel>
+            <translation><!-- Momentis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monkey N Middle</masterLabel>
+            <translation><!-- Monkey N Middle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NuOrder</masterLabel>
+            <translation><!-- NuOrder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ordre</masterLabel>
+            <translation><!-- Ordre --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pepperi</masterLabel>
+            <translation><!-- Pepperi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pop Market</masterLabel>
+            <translation><!-- Pop Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Threadvine</masterLabel>
+            <translation><!-- Threadvine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Uppler</masterLabel>
+            <translation><!-- Uppler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>World on a Hanger</masterLabel>
+            <translation><!-- World on a Hanger --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the date this contract ends. --></help>
+        <label><!-- Contract End Date --></label>
+        <name>Contract_End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of months between the Contract Start Date and Contract End Date. --></help>
+        <label><!-- Contract Months --></label>
+        <name>Contract_Months__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date this contract starts. --></help>
+        <label><!-- Contract Start Date --></label>
+        <name>Contract_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the contract Past, Active, or Future? --></help>
+        <label><!-- Contract Timing --></label>
+        <name>Contract_Timing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Type --></label>
+        <name>Contract_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Month --></label>
+        <name>Created_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Quarter --></label>
+        <name>Created_Quarter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Year --></label>
+        <name>Created_Year__c</name>
+    </fields>
+    <fields>
+        <help><!-- FINANCE ONLY --></help>
+        <label><!-- Credit Risk Notes --></label>
+        <name>Credit_Risk_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- FINANCE ONLY --></help>
+        <label><!-- Credit Risk --></label>
+        <name>Credit_Risk__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select N/A if Full Integration. --></help>
+        <label><!-- Customer Integration --></label>
+        <name>Customer_Sync__c</name>
+        <picklistValues>
+            <masterLabel>Customer Sync</masterLabel>
+            <translation><!-- Customer Sync --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- How long the Renewal has been At Risk (days). --></help>
+        <label><!-- Days At Risk --></label>
+        <name>Days_At_Risk__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many days since next steps were last updated. --></help>
+        <label><!-- Days Since Next Steps Updated --></label>
+        <name>Days_Since_Next_Steps_Updated__c</name>
+    </fields>
+    <fields>
+        <help><!-- Above The Line includes Director title and above. --></help>
+        <label><!-- Decision Maker Authority --></label>
+        <name>Decision_Maker_Authority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision Maker Title --></label>
+        <name>Decision_Maker_Title__c</name>
+    </fields>
+    <fields>
+        <help><!-- Who will be making the ultimate decision to buy? --></help>
+        <label><!-- Decision Maker --></label>
+        <name>Decision_Maker__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- When is the development work due? --></help>
+        <label><!-- Dev Target Due Date --></label>
+        <name>Dev_Target_Due_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Who is development required by? --></help>
+        <label><!-- Development Required By --></label>
+        <name>Development_Required_By__c</name>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation><!-- Both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JOOR</masterLabel>
+            <translation><!-- JOOR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Discovery Completed --></label>
+        <name>Discovery_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Documentation --></label>
+        <name>Documentation__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The date of the meeting you scheduled that is the source of this Opportunity. --></help>
+        <label><!-- First Meeting Date --></label>
+        <name>First_Meeting_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full Integration --></label>
+        <name>Full_Integration__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New API</masterLabel>
+            <translation><!-- New API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Flat File</masterLabel>
+            <translation><!-- New Flat File --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Built API</masterLabel>
+            <translation><!-- Pre-Built API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Built Flat File</masterLabel>
+            <translation><!-- Pre-Built Flat File --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The date this Account would like to reconnect about working with JOOR. Required when Future Interest is &quot;Yes&quot;. --></help>
+        <label><!-- Future Interest Date --></label>
+        <name>Future_Interest_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will this Account have future interest in working with JOOR? --></help>
+        <label><!-- Future Interest --></label>
+        <name>Future_Interest__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The % discount from what the Pricing Matrix is saying against what you currently value the Opportunity at. --></help>
+        <label><!-- Integration Discount from Rate Card --></label>
+        <name>Integration_Discount_from_Rate_Card__c</name>
+    </fields>
+    <fields>
+        <help><!-- The suggested integration fee for this customer per the Pricing Matrix. --></help>
+        <label><!-- Integration Quote --></label>
+        <name>Integration_Quote__c</name>
+    </fields>
+    <fields>
+        <help><!-- How will this partner integrate their product catalogue? --></help>
+        <label><!-- Integration Type --></label>
+        <name>Integration_Type__c</name>
+        <picklistValues>
+            <masterLabel>API</masterLabel>
+            <translation><!-- API --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation><!-- Custom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flat File</masterLabel>
+            <translation><!-- Flat File --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Which integrations will this partner use? --></help>
+        <label><!-- Integration --></label>
+        <name>Integration__c</name>
+        <picklistValues>
+            <masterLabel>Assortments</masterLabel>
+            <translation><!-- Assortments --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Budgets</masterLabel>
+            <translation><!-- Budgets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customers</masterLabel>
+            <translation><!-- Customers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hierarchy</masterLabel>
+            <translation><!-- Hierarchy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inventory</masterLabel>
+            <translation><!-- Inventory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Items</masterLabel>
+            <translation><!-- Items --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orders</masterLabel>
+            <translation><!-- Orders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Size Curves</masterLabel>
+            <translation><!-- Size Curves --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Styles</masterLabel>
+            <translation><!-- Styles --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Integrations Product Present --></label>
+        <name>Integrations_Product_Present__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select N/A if Full Integration. --></help>
+        <label><!-- Inventory Integration --></label>
+        <name>Inventory_Sync__c</name>
+        <picklistValues>
+            <masterLabel>Inventory Sync</masterLabel>
+            <translation><!-- Inventory Sync --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- FINANCE ONLY --></help>
+        <label><!-- Invoice Paid --></label>
+        <name>Invoice_Paid__c</name>
+    </fields>
+    <fields>
+        <help><!-- FINANCE ONLY --></help>
+        <label><!-- Invoice Sent --></label>
+        <name>Invoice_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- JOOR Test Account --></label>
+        <name>JOOR_Test_Account__c</name>
+        <relationshipLabel><!-- Opportunities (JOOR Test Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Use this to provide more detail on the Loss Reason. --></help>
+        <label><!-- Loss Reason Details --></label>
+        <name>Loss_Reason_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loss Reason --></label>
+        <name>Loss_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Don&apos;t See Value</masterLabel>
+            <translation><!-- Don&apos;t See Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Meeting Canceled / No Show</masterLabel>
+            <translation><!-- First Meeting Canceled / No Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integration Gap</masterLabel>
+            <translation><!-- Integration Gap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KPIs Not Aligned</masterLabel>
+            <translation><!-- KPIs Not Aligned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Like Product but Cannot Afford</masterLabel>
+            <translation><!-- Like Product but Cannot Afford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost to Competitor</masterLabel>
+            <translation><!-- Lost to Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Adoption</masterLabel>
+            <translation><!-- No Adoption --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Decision / Non-Responsive</masterLabel>
+            <translation><!-- No Decision / Non-Responsive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out of Business</masterLabel>
+            <translation><!-- Out of Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Gap</masterLabel>
+            <translation><!-- Product Gap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pulling Out of Wholesale</masterLabel>
+            <translation><!-- Pulling Out of Wholesale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Showroom Swap</masterLabel>
+            <translation><!-- Showroom Swap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Switch to In-House System</masterLabel>
+            <translation><!-- Switch to In-House System --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lost ARR --></label>
+        <name>Lost_ARR__c</name>
+    </fields>
+    <fields>
+        <help><!-- Monthly Recurring Revenue --></help>
+        <label><!-- MRR --></label>
+        <name>MRR__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Business ARR --></label>
+        <name>New_Business_ARR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Steps Changed Date --></label>
+        <name>Next_Steps_Changed_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Red = Not Updated in 10 Days |
+Yellow = Not Updated in 7 Days |
+Green = Updated in last 7 Days --></help>
+        <label><!-- Next Steps Flag --></label>
+        <name>Next_Steps_Flag__c</name>
+    </fields>
+    <fields>
+        <help><!-- What are your next steps with this Opportunity? --></help>
+        <label><!-- Next Steps --></label>
+        <name>Next_Steps__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many payments will the client&apos;s contract be broken up into? --></help>
+        <label><!-- Number of Payments --></label>
+        <name>Number_of_Payments__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of revenue in this deal that is a one time fee (integration work). --></help>
+        <label><!-- One Time Fee Total --></label>
+        <name>One_Time_Fee_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- OppAccountOwnerMismatch --></label>
+        <name>OppAccountOwnerMismatch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Counter --></label>
+        <name>Opportunity_Counter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select N/A if Full Integration. --></help>
+        <label><!-- Order Export Integration --></label>
+        <name>Order_Export_Sync__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Export</masterLabel>
+            <translation><!-- Order Export --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order Export w/o FTP</masterLabel>
+            <translation><!-- Order Export w/o FTP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Owner QTR Goal --></label>
+        <name>Owner_QTR_Goal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Region --></label>
+        <name>Owner_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner YR Goal --></label>
+        <name>Owner_YR_Goal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner --></label>
+        <name>Partner__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pilot Account --></label>
+        <name>Pilot_Account__c</name>
+        <relationshipLabel><!-- Opportunities (Pilot Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- When is the pilot expected to be done? --></help>
+        <label><!-- Pilot Target Due Date --></label>
+        <name>Pilot_Target_Due_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is this a Pilot deal? --></help>
+        <label><!-- Pilot --></label>
+        <name>Pilot__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pricing Matrix Annual Fee Number --></label>
+        <name>Pricing_Matrix_Annual_Fee_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Icon --></label>
+        <name>Product_Icon__c</name>
+    </fields>
+    <fields>
+        <label><!-- ROI Analysis Completed --></label>
+        <name>ROI_Analysis_Completed__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of revenue in this deal that is recurring. --></help>
+        <label><!-- Recurring Total --></label>
+        <name>Recurring_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal ARR --></label>
+        <name>Renewal_ARR__c</name>
+    </fields>
+    <fields>
+        <help><!-- The contracted price increase % at renewal. --></help>
+        <label><!-- Renewal Price Increase % --></label>
+        <name>Renewal_Price_Increase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retail Target List? --></label>
+        <name>Retail_Target_List__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SEASONS Number --></label>
+        <name>SEASONS_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- STOCKISTS Number --></label>
+        <name>STOCKISTS_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Opportunity ARR --></label>
+        <name>Source_Opportunity_ARR__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Contract Start Date should be the day after this date. --></help>
+        <label><!-- Source Opportunity End Date --></label>
+        <name>Source_Opportunity_End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Price increase % in the contract. --></help>
+        <label><!-- Source Opportunity Price Increase % --></label>
+        <name>Source_Opportunity_Price_Increase__c</name>
+    </fields>
+    <fields>
+        <help><!-- The won Opportunity prior to this Opportunity. --></help>
+        <label><!-- Source Opportunity --></label>
+        <name>Source_Opportunity__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The last time the Stage changed. --></help>
+        <label><!-- Stage Changed Date --></label>
+        <name>Stage_Changed_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select N/A if Full Integration. --></help>
+        <label><!-- Style Integration --></label>
+        <name>Style_Sync__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Style Sync</masterLabel>
+            <translation><!-- Style Sync --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TCV Weighted --></label>
+        <name>TCV_Weighted__c</name>
+    </fields>
+    <fields>
+        <help><!-- When is testing expected to be done? --></help>
+        <label><!-- Testing Target Due Date --></label>
+        <name>Testing_Target_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transactional Products Included --></label>
+        <name>Transactional_Products_Included__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of revenue in this deal that is transactional. --></help>
+        <label><!-- Transactional Total --></label>
+        <name>Transactional_Total__c</name>
+    </fields>
+    <fields>
+        <help><!-- DO NOT USE --></help>
+        <label><!-- Trigger --></label>
+        <name>Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- USERS Number --></label>
+        <name>USERS_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Positive number indicates an Upsell in ARR
+Negative number indicates a Downsell in ARR --></help>
+        <label><!-- Upsell/Downsell ARR --></label>
+        <name>Upsell_Downsell_ARR__c</name>
+    </fields>
+    <fields>
+        <label><!-- VOLUME Number --></label>
+        <name>VOLUME_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wholesale VOLUME --></label>
+        <name>Wholesale_VOLUME__c</name>
+        <picklistValues>
+            <masterLabel>11 to 20M</masterLabel>
+            <translation><!-- 11 to 20M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21 to 30M</masterLabel>
+            <translation><!-- 21 to 30M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>31 to 50M</masterLabel>
+            <translation><!-- 31 to 50M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 to 10M</masterLabel>
+            <translation><!-- 5 to 10M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50M+</masterLabel>
+            <translation><!-- 50M+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt; 5M</masterLabel>
+            <translation><!-- &lt; 5M --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Won ARR --></label>
+        <name>Won_ARR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Won TCV --></label>
+        <name>Won_TCV__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of brands or retailers associated with this opportunity (those receiving the services in the contract). --></help>
+        <label><!-- # of Brands/Retailers Attached --></label>
+        <name>of_Brands_Retailers_Attached__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Products added to the Opportunity. --></help>
+        <label><!-- # of Product Line Items --></label>
+        <name>of_Product_Line_Items__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of SEASONS per year --></label>
+        <name>of_SEASONS_per_year__c</name>
+        <picklistValues>
+            <masterLabel>1 to 2</masterLabel>
+            <translation><!-- 1 to 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 to 4</masterLabel>
+            <translation><!-- 3 to 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 to 6</masterLabel>
+            <translation><!-- 4 to 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7+</masterLabel>
+            <translation><!-- 7+ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- # of STOCKISTS --></label>
+        <name>of_STOCKISTS__c</name>
+        <picklistValues>
+            <masterLabel>101 to 200</masterLabel>
+            <translation><!-- 101 to 200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>201 to 350</masterLabel>
+            <translation><!-- 201 to 350 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>351 to 500</masterLabel>
+            <translation><!-- 351 to 500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>501+</masterLabel>
+            <translation><!-- 501+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt; 100</masterLabel>
+            <translation><!-- &lt; 100 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- # of USERS --></label>
+        <name>of_USERS__c</name>
+        <picklistValues>
+            <masterLabel>1 to 5</masterLabel>
+            <translation><!-- 1 to 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11 to 20</masterLabel>
+            <translation><!-- 11 to 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21 to 50</masterLabel>
+            <translation><!-- 21 to 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>51+</masterLabel>
+            <translation><!-- 51+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 to 10</masterLabel>
+            <translation><!-- 6 to 10 --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>New Business Layout</layout>
+        <sections>
+            <label><!-- Billing Details --></label>
+            <section>Billing Details</section>
+        </sections>
+        <sections>
+            <label><!-- Deal Financials --></label>
+            <section>Deal Financials</section>
+        </sections>
+        <sections>
+            <label><!-- Deal Management --></label>
+            <section>Deal Management</section>
+        </sections>
+        <sections>
+            <label><!-- Key Players --></label>
+            <section>Key Players</section>
+        </sections>
+        <sections>
+            <label><!-- Loss Details --></label>
+            <section>Loss Details</section>
+        </sections>
+        <sections>
+            <label><!-- Loss Reason Details --></label>
+            <section>Loss Reason Details</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Details --></label>
+            <section>Marketing Details</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing Matrix --></label>
+            <section>Pricing Matrix</section>
+        </sections>
+        <sections>
+            <label><!-- Products and Brands/Retailers Count --></label>
+            <section>Products and Brands/Retailers Count</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Partnership Layout</layout>
+        <sections>
+            <label><!-- Billing Details --></label>
+            <section>Billing Details</section>
+        </sections>
+        <sections>
+            <label><!-- Deal Financials --></label>
+            <section>Deal Financials</section>
+        </sections>
+        <sections>
+            <label><!-- Deal Management --></label>
+            <section>Deal Management</section>
+        </sections>
+        <sections>
+            <label><!-- Loss Details --></label>
+            <section>Loss Details</section>
+        </sections>
+        <sections>
+            <label><!-- Loss Reason Details --></label>
+            <section>Loss Reason Details</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Details --></label>
+            <section>Marketing Details</section>
+        </sections>
+        <sections>
+            <label><!-- Partnership Process --></label>
+            <section>Partnership Process</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Renewal Layout</layout>
+        <sections>
+            <label><!-- At Risk Details --></label>
+            <section>At Risk Details</section>
+        </sections>
+        <sections>
+            <label><!-- Billing Details --></label>
+            <section>Billing Details</section>
+        </sections>
+        <sections>
+            <label><!-- Deal Financials --></label>
+            <section>Deal Financials</section>
+        </sections>
+        <sections>
+            <label><!-- Deal Management --></label>
+            <section>Deal Management</section>
+        </sections>
+        <sections>
+            <label><!-- Key Players --></label>
+            <section>Key Players</section>
+        </sections>
+        <sections>
+            <label><!-- Loss Details --></label>
+            <section>Loss Details</section>
+        </sections>
+        <sections>
+            <label><!-- Loss Reason Details --></label>
+            <section>Loss Reason Details</section>
+        </sections>
+        <sections>
+            <label><!-- Marketing Details --></label>
+            <section>Marketing Details</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing Matrix --></label>
+            <section>Pricing Matrix</section>
+        </sections>
+        <sections>
+            <label><!-- Products and Brands/Retailers Count --></label>
+            <section>Products and Brands/Retailers Count</section>
+        </sections>
+        <sections>
+            <label><!-- Source Opportunity Details --></label>
+            <section>Source Opportunity Details</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- New Business --></label>
+        <name>New_Business</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Partnership --></label>
+        <name>Partnership</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Renewal --></label>
+        <name>Renewal</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Amount (TCV) is required on all Opportunities. Please estimate the value of the Opportunity. --></errorMessage>
+        <name>Amount_Always_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Notes are required for At Risk Renewals. --></errorMessage>
+        <name>At_Risk_Renewals_Require_Notes</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Close Date cannot be in the past on open Opportunities. --></errorMessage>
+        <name>Close_Date_Cannot_be_in_the_Past</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contract months must be a whole number. --></errorMessage>
+        <name>Contract_Months_Must_be_Even</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Decision Maker and Champion must be documented to move into or passed Decision Maker Engaged stage. --></errorMessage>
+        <name>DM_and_Champion_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Expected Churn Renewals cannot be unmarked &quot;At Risk&quot;. --></errorMessage>
+        <name>Expected_Churn_Renewals_Must_be_At_Risk</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Future Interest requires a Future Interest Date (cannot be in the past). --></errorMessage>
+        <name>Future_Interest_Requires_a_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- JOOR ID is missing on the Account. Please go to the account details page and input the JOOR ID. --></errorMessage>
+        <name>JOOR_ID_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Closed Lost Opportunities require a Loss Reason w/ Details and a value for Future Interest. --></errorMessage>
+        <name>Lost_Opportunities_Require_Loss_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- To churn this contract, the ARR must match the Source Opportunity ARR. You will likely need to adjust either the Product values or Contract Dates. --></errorMessage>
+        <name>Lost_Renewal_ARR_Must_Match_Source</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only System Administrators can edit financial fields or re-open closed Opportunities. --></errorMessage>
+        <name>Only_System_Admins_Can_Edit_Closed_Opps</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Revenue generating Partnerships require all billing details, contract dates, auto-renew, renewal price increase, and product(s) to be entered. --></errorMessage>
+        <name>Partnership_Billing_When_Revenue_Present</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Development Required By and Dev Target Due Date are required to move the stage to Development. --></errorMessage>
+        <name>Partnership_Dev_Stage_Requirements</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Partner, Integration Type, and Integration are required to move past the Discovery stage. --></errorMessage>
+        <name>Partnership_Discovery_Exit_Requirements</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Documentation must be &quot;Complete&quot; in order to leave the Piloting stage. --></errorMessage>
+        <name>Partnership_Pilot_Exit_Stage_Requirement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Pilot Account and Pilot Target Due Date are required to change stage to Piloting. --></errorMessage>
+        <name>Partnership_Piloting_Stage_Requirements</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- JOOR Test Account and Testing Target Due Date are required to move the Stage to Testing. --></errorMessage>
+        <name>Partnership_Testing_Stage_Requirements</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Pricing Matrix fields must all be entered and Products should be added to the Opportunity to move Stage to Pricing Negotiations+ --></errorMessage>
+        <name>Pricing_Matrix_Required_for_Brand_Deals</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Requires all the Pricing Matrix data to be entered before moving stage to Demo Completed+ --></errorMessage>
+        <name>Pricing_Matrix_Required_for_Demo_Stage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing Details, Contract Dates, Pilot, Auto Renew, and Renewal Increase % are required to mark the Opportunity as Closed Won. Tip: Mark values as zero, &apos;No&apos;, etc. as blank fields are not allowed. --></errorMessage>
+        <name>Required_Billing_Fields_to_Close_Win</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- At least one Brand/Retailer must be attached in order to mark the Opportunity as Closed Won. --></errorMessage>
+        <name>Required_Brands_Retailers_to_Close_Win</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- First Meeting Date is required to move Stage to First Meeting Scheduled+ --></errorMessage>
+        <name>Required_First_Meeting_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contract Start Date must be before Contract End Date. --></errorMessage>
+        <name>Start_Date_Must_Be_Before_End_Date</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Related_Opportunities --></label>
+        <name>Related_Opportunities</name>
+    </webLinks>
+</CustomObjectTranslation>

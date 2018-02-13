@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Case Escalation</name>
+    <style>none</style>
+    <subject>Case escalation</subject>
+    <textOnly>Hi!
+
+A case has been escalated to you.
+
+Link: {!Case.Link}
+
+Please connect with the Case Owner and log into your account to address the case.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

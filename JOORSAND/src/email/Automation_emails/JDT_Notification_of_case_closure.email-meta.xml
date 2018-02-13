@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Automated response when case is closed</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CASE: JDT_Notification of case closure</name>
+    <style>none</style>
+    <subject>Case is closed</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Template is used for auto-response rule and sending Case ID to all recipients</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CASE: Auto response with Case ID</name>
+    <style>none</style>
+    <subject>{!EmailMessage.Subject}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

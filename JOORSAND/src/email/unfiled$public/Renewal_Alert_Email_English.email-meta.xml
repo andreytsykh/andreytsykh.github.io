@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email template to send to clients whose contracts are expiring. (English)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>JOOR_Inc</letterhead>
+    <name>Renewal Alert Email - English</name>
+    <style>formalLetter</style>
+    <subject>Your JOOR subscription will renew soon</subject>
+    <textOnly>Dear JOOR Member,
+
+Thank you for being a valued member of JOOR. Per our agreement, your membership is set to automatically renew on {!Opportunity.Contract_Start_Date__c}.
+
+We greatly value our partnership and look forward to another successful year together!
+
+Best regards,
+JOOR Team
+Copyright © 2017 JOOR, Inc.  All rights reserved.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

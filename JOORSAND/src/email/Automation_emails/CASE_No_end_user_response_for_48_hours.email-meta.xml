@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>When case has not received a response from the end-user in 48 hours</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CASE: No end-user response for 48 hours</name>
+    <style>none</style>
+    <subject>Case has not received a response from the end-user in 48 hours</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

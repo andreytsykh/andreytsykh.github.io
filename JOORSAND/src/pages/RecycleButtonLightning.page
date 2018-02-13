@@ -1,0 +1,5 @@
+<apex:page standardController="Account">
+    <flow:interview name="Recycle_Account_Button" finishLocation="/{!Account.Id}">
+        <apex:param name="AccountID" value="{!Account.Id}"/>
+	</flow:interview>
+</apex:page>

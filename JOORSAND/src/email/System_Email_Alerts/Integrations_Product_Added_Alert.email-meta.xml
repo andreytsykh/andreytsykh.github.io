@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Alert to integrations when deals have an integrations product added so they are aware of integration work that will be starting.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Integrations Product Added Alert</name>
+    <style>none</style>
+    <subject>Integrations product added to Opportunity for {!Opportunity.Account}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

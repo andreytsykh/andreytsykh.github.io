@@ -1,0 +1,11 @@
+Hi, 
+
+The Case # {!Case.CaseNumber} has been in Status: In Progress for 6 hours. 
+
+{!Case.Thread_Id}
+
+{!Case.Link} 
+
+Please review. 
+
+Thanks

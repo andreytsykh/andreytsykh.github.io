@@ -1,0 +1,4419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChangeStatus</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloneAsChild</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloseCase</actionName>
+        <content>rh2__PS_Case_Action</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MassClose</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewCase</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>Case_Page_Layout_Lightning</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <businessProcesses>
+        <fullName>Common Process</fullName>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+    </businessProcesses>
+    <businessProcesses>
+        <fullName>Integration</fullName>
+        <isActive>true</isActive>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Queue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resolved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting on Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting on Third Party</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <businessProcesses>
+        <fullName>JDT Process</fullName>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Queue</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <compactLayoutAssignment>Case_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Case_Compact_Layout</fullName>
+        <fields>Subject</fields>
+        <fields>ContactId</fields>
+        <fields>AccountId</fields>
+        <fields>JOOR_Account_ID__c</fields>
+        <fields>Reason</fields>
+        <fields>OwnerId</fields>
+        <fields>Critical__c</fields>
+        <label>Case Compact Layout</label>
+    </compactLayouts>
+    <enableFeeds>true</enableFeeds>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_owner__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Owner.Username</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account owner</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AssetId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BusinessHoursId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CaseThreadId__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;ref:_00D&quot;&amp;MID(Id,4,1)&amp;RIGHT($Organization.Id, 4) &amp;&quot;._&quot;&amp; LEFT(Id,4)&amp;RIGHT(Id,5) &amp;&quot;:ref&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CaseThreadId</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Age__c</fullName>
+        <description>Calculates the days the case has been open, or how long it was open before becoming closed.</description>
+        <externalId>false</externalId>
+        <formula>IF(IsClosed,
+DATEVALUE(ClosedDate)-DATEVALUE(CreatedDate),
+TODAY()-DATEVALUE(CreatedDate)
+)</formula>
+        <label>Case Age</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Counter__c</fullName>
+        <description>For reporting. Look up &quot;Power of One&quot; Salesforce articles.</description>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <label>Case Counter</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Subreason__c</fullName>
+        <externalId>false</externalId>
+        <label>Case Sub-reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Reason</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Add New User</fullName>
+                    <default>false</default>
+                    <label>Add New User</label>
+                </value>
+                <value>
+                    <fullName>Add Price Type</fullName>
+                    <default>false</default>
+                    <label>Add Price Type</label>
+                </value>
+                <value>
+                    <fullName>Order Settings</fullName>
+                    <default>false</default>
+                    <label>Order Settings</label>
+                </value>
+                <value>
+                    <fullName>Force Connect Accounts</fullName>
+                    <default>false</default>
+                    <label>Force Connect Accounts</label>
+                </value>
+                <value>
+                    <fullName>Force Connect (Create New Account)</fullName>
+                    <default>false</default>
+                    <label>Force Connect (Create New Account)</label>
+                </value>
+                <value>
+                    <fullName>Export Customer List</fullName>
+                    <default>false</default>
+                    <label>Export Customer List</label>
+                </value>
+                <value>
+                    <fullName>What is JOOR?</fullName>
+                    <default>false</default>
+                    <label>What is JOOR?</label>
+                </value>
+                <value>
+                    <fullName>Prospect Asking Questions (retail/brand)</fullName>
+                    <default>false</default>
+                    <label>Prospect Asking Questions (retail/brand)</label>
+                </value>
+                <value>
+                    <fullName>New Feature/Enhancement Request</fullName>
+                    <default>false</default>
+                    <label>New Feature/Enhancement Request</label>
+                </value>
+                <value>
+                    <fullName>Bug</fullName>
+                    <default>false</default>
+                    <label>Bug</label>
+                </value>
+                <value>
+                    <fullName>Retail Support</fullName>
+                    <default>false</default>
+                    <label>Retail Support</label>
+                </value>
+                <value>
+                    <fullName>Spam Calls</fullName>
+                    <default>false</default>
+                    <label>Spam Calls</label>
+                </value>
+                <value>
+                    <fullName>User Re-Education (product training/explaination)</fullName>
+                    <default>false</default>
+                    <label>User Re-Education (product training/explaination)</label>
+                </value>
+                <value>
+                    <fullName>Linesheet visibility (add)</fullName>
+                    <default>false</default>
+                    <label>Linesheet visibility (add)</label>
+                </value>
+                <value>
+                    <fullName>Export Linesheet (add?)</fullName>
+                    <default>false</default>
+                    <label>Export Linesheet (add?)</label>
+                </value>
+                <value>
+                    <fullName>Add/Edit Style(s) (add?)</fullName>
+                    <default>false</default>
+                    <label>Add/Edit Style(s) (add?)</label>
+                </value>
+                <value>
+                    <fullName>Change Order Status</fullName>
+                    <default>false</default>
+                    <label>Change Order Status</label>
+                </value>
+                <value>
+                    <fullName>Merge Multiple POs into one PO</fullName>
+                    <default>false</default>
+                    <label>Merge Multiple POs into one PO</label>
+                </value>
+                <value>
+                    <fullName>Move Orders (between accounts)</fullName>
+                    <default>false</default>
+                    <label>Move Orders (between accounts)</label>
+                </value>
+                <value>
+                    <fullName>Resolve Orphan Orders</fullName>
+                    <default>false</default>
+                    <label>Resolve Orphan Orders</label>
+                </value>
+                <value>
+                    <fullName>Order Update</fullName>
+                    <default>false</default>
+                    <label>Order Update</label>
+                </value>
+                <value>
+                    <fullName>Update Permissions</fullName>
+                    <default>false</default>
+                    <label>Update Permissions</label>
+                </value>
+                <value>
+                    <fullName>Password Reset</fullName>
+                    <default>false</default>
+                    <label>Password Reset</label>
+                </value>
+                <value>
+                    <fullName>Setup</fullName>
+                    <default>false</default>
+                    <label>Setup</label>
+                </value>
+                <value>
+                    <fullName>Onboarding</fullName>
+                    <default>false</default>
+                    <label>Onboarding</label>
+                </value>
+                <value>
+                    <fullName>Testing</fullName>
+                    <default>false</default>
+                    <label>Testing</label>
+                </value>
+                <value>
+                    <fullName>ERP &gt; Outreach/Discovery</fullName>
+                    <default>false</default>
+                    <label>ERP &gt; Outreach/Discovery</label>
+                </value>
+                <value>
+                    <fullName>ERP &gt; Development</fullName>
+                    <default>false</default>
+                    <label>ERP &gt; Development</label>
+                </value>
+                <value>
+                    <fullName>ERP &gt; Testing</fullName>
+                    <default>false</default>
+                    <label>ERP &gt; Testing</label>
+                </value>
+                <value>
+                    <fullName>ERP &gt; Piloting</fullName>
+                    <default>false</default>
+                    <label>ERP &gt; Piloting</label>
+                </value>
+                <value>
+                    <fullName>POS &gt; Outreach/Discovery</fullName>
+                    <default>false</default>
+                    <label>POS &gt; Outreach/Discovery</label>
+                </value>
+                <value>
+                    <fullName>POS &gt; Development</fullName>
+                    <default>false</default>
+                    <label>POS &gt; Development</label>
+                </value>
+                <value>
+                    <fullName>POS &gt; Testing</fullName>
+                    <default>false</default>
+                    <label>POS &gt; Testing</label>
+                </value>
+                <value>
+                    <fullName>POS &gt; Piloting</fullName>
+                    <default>false</default>
+                    <label>POS &gt; Piloting</label>
+                </value>
+                <value>
+                    <fullName>Contract Review</fullName>
+                    <default>false</default>
+                    <label>Contract Review</label>
+                </value>
+                <value>
+                    <fullName>Sample Files</fullName>
+                    <default>false</default>
+                    <label>Sample Files</label>
+                </value>
+                <value>
+                    <fullName>Technical Questions</fullName>
+                    <default>false</default>
+                    <label>Technical Questions</label>
+                </value>
+                <value>
+                    <fullName>Documentation</fullName>
+                    <default>false</default>
+                    <label>Documentation</label>
+                </value>
+                <value>
+                    <fullName>Improvement</fullName>
+                    <default>false</default>
+                    <label>Improvement</label>
+                </value>
+                <value>
+                    <fullName>New Feature</fullName>
+                    <default>false</default>
+                    <label>New Feature</label>
+                </value>
+                <value>
+                    <fullName>API Customers</fullName>
+                    <default>false</default>
+                    <label>API Customers</label>
+                </value>
+                <value>
+                    <fullName>Customer Sync</fullName>
+                    <default>false</default>
+                    <label>Customer Sync</label>
+                </value>
+                <value>
+                    <fullName>Set/Update Required Fields</fullName>
+                    <default>false</default>
+                    <label>Set/Update Required Fields</label>
+                </value>
+                <value>
+                    <fullName>UPC Issues</fullName>
+                    <default>false</default>
+                    <label>UPC Issues</label>
+                </value>
+                <value>
+                    <fullName>Product Questions</fullName>
+                    <default>false</default>
+                    <label>Product Questions</label>
+                </value>
+                <value>
+                    <fullName>Validation Errors</fullName>
+                    <default>false</default>
+                    <label>Validation Errors</label>
+                </value>
+                <value>
+                    <fullName>Force Export</fullName>
+                    <default>false</default>
+                    <label>Force Export</label>
+                </value>
+                <value>
+                    <fullName>Manual Export</fullName>
+                    <default>false</default>
+                    <label>Manual Export</label>
+                </value>
+                <value>
+                    <fullName>Style Issues</fullName>
+                    <default>false</default>
+                    <label>Style Issues</label>
+                </value>
+                <value>
+                    <fullName>Order Issues</fullName>
+                    <default>false</default>
+                    <label>Order Issues</label>
+                </value>
+                <value>
+                    <fullName>Inventory Issues</fullName>
+                    <default>false</default>
+                    <label>Inventory Issues</label>
+                </value>
+                <value>
+                    <fullName>Customer Issues</fullName>
+                    <default>false</default>
+                    <label>Customer Issues</label>
+                </value>
+                <value>
+                    <fullName>FTP Issues</fullName>
+                    <default>false</default>
+                    <label>FTP Issues</label>
+                </value>
+                <value>
+                    <fullName>Schedule Settings</fullName>
+                    <default>false</default>
+                    <label>Schedule Settings</label>
+                </value>
+                <value>
+                    <fullName>Old RLM</fullName>
+                    <default>false</default>
+                    <label>Old RLM</label>
+                </value>
+                <value>
+                    <fullName>EDI 850</fullName>
+                    <default>false</default>
+                    <label>EDI 850</label>
+                </value>
+                <value>
+                    <fullName>Kellwood</fullName>
+                    <default>false</default>
+                    <label>Kellwood</label>
+                </value>
+                <value>
+                    <fullName>Assortments</fullName>
+                    <default>false</default>
+                    <label>Assortments</label>
+                </value>
+                <value>
+                    <fullName>Web Orders</fullName>
+                    <default>false</default>
+                    <label>Web Orders</label>
+                </value>
+                <value>
+                    <fullName>Budgets</fullName>
+                    <default>false</default>
+                    <label>Budgets</label>
+                </value>
+                <value>
+                    <fullName>Hierarchy</fullName>
+                    <default>false</default>
+                    <label>Hierarchy</label>
+                </value>
+                <value>
+                    <fullName>Size Curves</fullName>
+                    <default>false</default>
+                    <label>Size Curves</label>
+                </value>
+                <value>
+                    <fullName>Size Mapping</fullName>
+                    <default>false</default>
+                    <label>Size Mapping</label>
+                </value>
+                <value>
+                    <fullName>Add Connections</fullName>
+                    <default>false</default>
+                    <label>Add Connections</label>
+                </value>
+                <value>
+                    <fullName>Update Connections</fullName>
+                    <default>false</default>
+                    <label>Update Connections</label>
+                </value>
+                <value>
+                    <fullName>Initial Account List</fullName>
+                    <default>false</default>
+                    <label>Initial Account List</label>
+                </value>
+                <value>
+                    <fullName>Updated Account List</fullName>
+                    <default>false</default>
+                    <label>Updated Account List</label>
+                </value>
+                <value>
+                    <fullName>Add Images/Swatches</fullName>
+                    <default>false</default>
+                    <label>Add Images/Swatches</label>
+                </value>
+                <value>
+                    <fullName>Resize Images/Swatches</fullName>
+                    <default>false</default>
+                    <label>Resize Images/Swatches</label>
+                </value>
+                <value>
+                    <fullName>Update Images/Swatches</fullName>
+                    <default>false</default>
+                    <label>Update Images/Swatches</label>
+                </value>
+                <value>
+                    <fullName>New Linesheet</fullName>
+                    <default>false</default>
+                    <label>New Linesheet</label>
+                </value>
+                <value>
+                    <fullName>New Linesheet with Images</fullName>
+                    <default>false</default>
+                    <label>New Linesheet with Images</label>
+                </value>
+                <value>
+                    <fullName>Copy Linesheet</fullName>
+                    <default>false</default>
+                    <label>Copy Linesheet</label>
+                </value>
+                <value>
+                    <fullName>Copy Linesheet with Images</fullName>
+                    <default>false</default>
+                    <label>Copy Linesheet with Images</label>
+                </value>
+                <value>
+                    <fullName>Reorder Linesheet</fullName>
+                    <default>false</default>
+                    <label>Reorder Linesheet</label>
+                </value>
+                <value>
+                    <fullName>Update Sizes</fullName>
+                    <default>false</default>
+                    <label>Update Sizes</label>
+                </value>
+                <value>
+                    <fullName>Update Style Information</fullName>
+                    <default>false</default>
+                    <label>Update Style Information</label>
+                </value>
+                <value>
+                    <fullName>Orders Failing</fullName>
+                    <default>false</default>
+                    <label>Orders Failing</label>
+                </value>
+                <value>
+                    <fullName>Price Updates</fullName>
+                    <default>false</default>
+                    <label>Price Updates</label>
+                </value>
+                <value>
+                    <fullName>Color Updates</fullName>
+                    <default>false</default>
+                    <label>Color Updates</label>
+                </value>
+                <value>
+                    <fullName>Add Styles to Existing Linesheet</fullName>
+                    <default>false</default>
+                    <label>Add Styles to Existing Linesheet</label>
+                </value>
+                <value>
+                    <fullName>Remove Styles from Existing Linesheet</fullName>
+                    <default>false</default>
+                    <label>Remove Styles from Existing Linesheet</label>
+                </value>
+                <value>
+                    <fullName>Size Updates</fullName>
+                    <default>false</default>
+                    <label>Size Updates</label>
+                </value>
+                <value>
+                    <fullName>Division Updates</fullName>
+                    <default>false</default>
+                    <label>Division Updates</label>
+                </value>
+                <value>
+                    <fullName>Last Modified Information</fullName>
+                    <default>false</default>
+                    <label>Last Modified Information</label>
+                </value>
+                <value>
+                    <fullName>Delete Styles/Linesheets</fullName>
+                    <default>false</default>
+                    <label>Delete Styles/Linesheets</label>
+                </value>
+                <value>
+                    <fullName>Restore Styles/Linesheets</fullName>
+                    <default>false</default>
+                    <label>Restore Styles/Linesheets</label>
+                </value>
+                <value>
+                    <fullName>Insert/Update Tags</fullName>
+                    <default>false</default>
+                    <label>Insert/Update Tags</label>
+                </value>
+                <value>
+                    <fullName>Retailer Settings</fullName>
+                    <default>false</default>
+                    <label>Retailer Settings</label>
+                </value>
+                <value>
+                    <fullName>User Permissions</fullName>
+                    <default>false</default>
+                    <label>User Permissions</label>
+                </value>
+                <value>
+                    <fullName>Bad Data</fullName>
+                    <default>false</default>
+                    <label>Bad Data</label>
+                </value>
+                <value>
+                    <fullName>Integrations Request</fullName>
+                    <default>false</default>
+                    <label>Integrations Request</label>
+                </value>
+                <value>
+                    <fullName>Brand Overlap</fullName>
+                    <default>false</default>
+                    <label>Brand Overlap</label>
+                </value>
+                <value>
+                    <fullName>Investigate Issue</fullName>
+                    <default>false</default>
+                    <label>Investigate Issue</label>
+                </value>
+                <value>
+                    <fullName>Development</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Development</label>
+                </value>
+                <value>
+                    <fullName>Outreach</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Outreach</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Images/Swatches</controllingFieldValue>
+                <controllingFieldValue>Style Updates</controllingFieldValue>
+                <controllingFieldValue>iPad App</controllingFieldValue>
+                <controllingFieldValue>Linesheet Management</controllingFieldValue>
+                <controllingFieldValue>CSM</controllingFieldValue>
+                <controllingFieldValue>Order Updates</controllingFieldValue>
+                <controllingFieldValue>Product</controllingFieldValue>
+                <controllingFieldValue>Partnership</controllingFieldValue>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <controllingFieldValue>Project Implementation</controllingFieldValue>
+                <controllingFieldValue>Prospect/Sales Support</controllingFieldValue>
+                <controllingFieldValue>Retail</controllingFieldValue>
+                <controllingFieldValue>Data Request - For Client</controllingFieldValue>
+                <controllingFieldValue>Data Request - Internal</controllingFieldValue>
+                <controllingFieldValue>General Inquiry / Other</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Images/Swatches</controllingFieldValue>
+                <valueName>Add Images/Swatches</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Images/Swatches</controllingFieldValue>
+                <valueName>Resize Images/Swatches</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Images/Swatches</controllingFieldValue>
+                <valueName>Update Images/Swatches</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Style Updates</controllingFieldValue>
+                <valueName>Price Updates</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Style Updates</controllingFieldValue>
+                <valueName>Color Updates</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Style Updates</controllingFieldValue>
+                <valueName>Add Styles to Existing Linesheet</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Style Updates</controllingFieldValue>
+                <valueName>Remove Styles from Existing Linesheet</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Style Updates</controllingFieldValue>
+                <valueName>Size Updates</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Style Updates</controllingFieldValue>
+                <valueName>Division Updates</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>iPad App</controllingFieldValue>
+                <valueName>API Customers</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>iPad App</controllingFieldValue>
+                <valueName>Customer Sync</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Linesheet Management</controllingFieldValue>
+                <valueName>New Linesheet</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Linesheet Management</controllingFieldValue>
+                <valueName>New Linesheet with Images</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Linesheet Management</controllingFieldValue>
+                <valueName>Copy Linesheet</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Linesheet Management</controllingFieldValue>
+                <valueName>Copy Linesheet with Images</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Linesheet Management</controllingFieldValue>
+                <valueName>Reorder Linesheet</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CSM</controllingFieldValue>
+                <valueName>Old RLM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CSM</controllingFieldValue>
+                <valueName>EDI 850</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CSM</controllingFieldValue>
+                <valueName>Kellwood</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Linesheets / Styles</controllingFieldValue>
+                <valueName>Linesheet visibility (add)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Linesheets / Styles</controllingFieldValue>
+                <valueName>Export Linesheet (add?)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Linesheets / Styles</controllingFieldValue>
+                <valueName>Add/Edit Style(s) (add?)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Order Updates</controllingFieldValue>
+                <valueName>Update Sizes</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Order Updates</controllingFieldValue>
+                <valueName>Update Style Information</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Order Updates</controllingFieldValue>
+                <valueName>Orders Failing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Orders</controllingFieldValue>
+                <valueName>Change Order Status</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Orders</controllingFieldValue>
+                <valueName>Merge Multiple POs into one PO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Orders</controllingFieldValue>
+                <valueName>Move Orders (between accounts)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Orders</controllingFieldValue>
+                <valueName>Resolve Orphan Orders</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Orders</controllingFieldValue>
+                <valueName>Order Update</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Product</controllingFieldValue>
+                <controllingFieldValue>General Inquiry / Other</controllingFieldValue>
+                <valueName>Bug</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Product</controllingFieldValue>
+                <valueName>Improvement</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Product</controllingFieldValue>
+                <valueName>New Feature</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Partnership</controllingFieldValue>
+                <valueName>ERP &gt; Outreach/Discovery</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Partnership</controllingFieldValue>
+                <valueName>ERP &gt; Development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Partnership</controllingFieldValue>
+                <valueName>ERP &gt; Testing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Partnership</controllingFieldValue>
+                <valueName>ERP &gt; Piloting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Partnership</controllingFieldValue>
+                <valueName>POS &gt; Outreach/Discovery</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Partnership</controllingFieldValue>
+                <valueName>POS &gt; Development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Partnership</controllingFieldValue>
+                <valueName>POS &gt; Testing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Partnership</controllingFieldValue>
+                <valueName>POS &gt; Piloting</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Settings</controllingFieldValue>
+                <valueName>Add New User</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Settings</controllingFieldValue>
+                <valueName>Add Price Type</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Account Settings</controllingFieldValue>
+                <valueName>Order Settings</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>API</controllingFieldValue>
+                <controllingFieldValue>Flat File</controllingFieldValue>
+                <valueName>Set/Update Required Fields</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>API</controllingFieldValue>
+                <controllingFieldValue>Flat File</controllingFieldValue>
+                <valueName>UPC Issues</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>API</controllingFieldValue>
+                <controllingFieldValue>Flat File</controllingFieldValue>
+                <valueName>Product Questions</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>API</controllingFieldValue>
+                <controllingFieldValue>Flat File</controllingFieldValue>
+                <valueName>Validation Errors</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>API</controllingFieldValue>
+                <controllingFieldValue>Flat File</controllingFieldValue>
+                <valueName>Force Export</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>API</controllingFieldValue>
+                <controllingFieldValue>Flat File</controllingFieldValue>
+                <valueName>Manual Export</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>API</controllingFieldValue>
+                <controllingFieldValue>Flat File</controllingFieldValue>
+                <valueName>Style Issues</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>API</controllingFieldValue>
+                <controllingFieldValue>Flat File</controllingFieldValue>
+                <valueName>Order Issues</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>API</controllingFieldValue>
+                <controllingFieldValue>Flat File</controllingFieldValue>
+                <valueName>Inventory Issues</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>API</controllingFieldValue>
+                <controllingFieldValue>Flat File</controllingFieldValue>
+                <valueName>Customer Issues</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>Force Connect Accounts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>Force Connect (Create New Account)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>Export Customer List</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>Add Connections</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>Update Connections</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>Initial Account List</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Connections</controllingFieldValue>
+                <valueName>Updated Account List</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Project Implementation</controllingFieldValue>
+                <valueName>Setup</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Project Implementation</controllingFieldValue>
+                <valueName>Onboarding</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Project Implementation</controllingFieldValue>
+                <valueName>Testing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Prospect/Sales Support</controllingFieldValue>
+                <valueName>Contract Review</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Prospect/Sales Support</controllingFieldValue>
+                <valueName>Sample Files</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Prospect/Sales Support</controllingFieldValue>
+                <valueName>Technical Questions</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Prospect/Sales Support</controllingFieldValue>
+                <valueName>Documentation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Retail</controllingFieldValue>
+                <valueName>Assortments</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Retail</controllingFieldValue>
+                <valueName>Web Orders</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Retail</controllingFieldValue>
+                <valueName>Budgets</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Retail</controllingFieldValue>
+                <valueName>Hierarchy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Retail</controllingFieldValue>
+                <valueName>Size Curves</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Retail</controllingFieldValue>
+                <valueName>Size Mapping</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Data Request - For Client</controllingFieldValue>
+                <controllingFieldValue>Data Request - Internal</controllingFieldValue>
+                <valueName>Last Modified Information</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Data Request - For Client</controllingFieldValue>
+                <valueName>Delete Styles/Linesheets</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Data Request - For Client</controllingFieldValue>
+                <valueName>Restore Styles/Linesheets</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Data Request - For Client</controllingFieldValue>
+                <valueName>Insert/Update Tags</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Data Request - For Client</controllingFieldValue>
+                <valueName>Retailer Settings</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Data Request - For Client</controllingFieldValue>
+                <valueName>User Permissions</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Data Request - For Client</controllingFieldValue>
+                <valueName>Bad Data</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Data Request - For Client</controllingFieldValue>
+                <valueName>Integrations Request</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Data Request - Internal</controllingFieldValue>
+                <valueName>Brand Overlap</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Data Request - Internal</controllingFieldValue>
+                <valueName>Investigate Issue</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Flat File</controllingFieldValue>
+                <valueName>FTP Issues</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Flat File</controllingFieldValue>
+                <valueName>Schedule Settings</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>User Settings</controllingFieldValue>
+                <valueName>Update Permissions</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>User Settings</controllingFieldValue>
+                <valueName>Password Reset</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>General Inquiry / Other</controllingFieldValue>
+                <valueName>What is JOOR?</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>General Inquiry / Other</controllingFieldValue>
+                <valueName>Prospect Asking Questions (retail/brand)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>General Inquiry / Other</controllingFieldValue>
+                <valueName>New Feature/Enhancement Request</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>General Inquiry / Other</controllingFieldValue>
+                <valueName>Retail Support</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>General Inquiry / Other</controllingFieldValue>
+                <valueName>Spam Calls</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>General Inquiry / Other</controllingFieldValue>
+                <valueName>User Re-Education (product training/explaination)</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ClosedDate</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Comments</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactFax</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContactMobile</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Contact_FirstName__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact.FirstName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact_FirstName</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Created_By_Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedBy.Email</formula>
+        <label>Created By Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Critical__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates Cases where the issue is stopping the client from conducting business.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check if this case is preventing the customer from conducting business. If checked, it should be addressed immediately.</inlineHelpText>
+        <label>Critical</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Last_Response_Date__c</fullName>
+        <description>The date of the last email from customer</description>
+        <externalId>false</externalId>
+        <label>Customer Last Response Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Data_category__c</fullName>
+        <externalId>false</externalId>
+        <label>Data category groups</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>JOOR Brands</fullName>
+                    <default>false</default>
+                    <label>JOOR Brands</label>
+                </value>
+                <value>
+                    <fullName>JOOR Premium Retailers</fullName>
+                    <default>false</default>
+                    <label>JOOR Premium Retailers</label>
+                </value>
+                <value>
+                    <fullName>JOOR Free Retailers</fullName>
+                    <default>false</default>
+                    <label>JOOR Free Retailers</label>
+                </value>
+                <value>
+                    <fullName>Non-JOOR Brands</fullName>
+                    <default>false</default>
+                    <label>Non-JOOR Brands</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Description_for_pre_chat_form__c</fullName>
+        <description>Field is used for pre-chat form for Live agent. Then the discription is updated based on this field.</description>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>End_User_Last_Response_Date__c</fullName>
+        <description>The date of the last email from client</description>
+        <externalId>false</externalId>
+        <label>End-User Last Response Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Escalate_to__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Level 1 - Account Manager,
+Level 2 - Senior Manager,
+Level 3 - Director</inlineHelpText>
+        <label>Escalate to</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Level 1</fullName>
+                    <default>false</default>
+                    <label>Level 1</label>
+                </value>
+                <value>
+                    <fullName>Level 2</fullName>
+                    <default>false</default>
+                    <label>Level 2</label>
+                </value>
+                <value>
+                    <fullName>Level 3</fullName>
+                    <default>false</default>
+                    <label>Level 3</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Full Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsClosedOnCreate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsEscalated</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Issue_Key__c</fullName>
+        <description>Link to JIRA board.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter JIRA ID when applicable.</inlineHelpText>
+        <label>Issue Key</label>
+        <length>55</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>JOOR_Account_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.JOOR_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>JOOR Account ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Key_Account__c</fullName>
+        <description>Returns the value in the Key Account field on the related Account.</description>
+        <externalId>false</externalId>
+        <formula>Account.Key_Account__c</formula>
+        <inlineHelpText>Checked if the related Account is a Key Account.</inlineHelpText>
+        <label>Key Account</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Minutes_Spent__c</fullName>
+        <description>Self reported by Case owner.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>How many minutes did you spend working on this case?</inlineHelpText>
+        <label>Minutes Spent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NY_Hours__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>NY Hours</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>New_Integration__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>New Integration</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Origin</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <inlineHelpText>Should reflect the priority of this Case&apos;s Account (based on what their business is worth to JOOR). Key Accounts will be set to High and cannot be changed.</inlineHelpText>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Reason</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Resolution__c</fullName>
+        <externalId>false</externalId>
+        <label>Resolution</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SourceId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedCompany</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedName</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Time_Spent__c</fullName>
+        <externalId>false</externalId>
+        <label>Time Spent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>What_can_we_help_with__c</fullName>
+        <externalId>false</externalId>
+        <label>What can we help with?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>true</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>Account Settings</fullName>
+                    <default>false</default>
+                    <label>Account Settings</label>
+                </value>
+                <value>
+                    <fullName>Connections</fullName>
+                    <default>false</default>
+                    <label>Connections</label>
+                </value>
+                <value>
+                    <fullName>General Inquiry / Other</fullName>
+                    <default>false</default>
+                    <label>General Inquiry / Other</label>
+                </value>
+                <value>
+                    <fullName>Integrations</fullName>
+                    <default>false</default>
+                    <label>Integrations</label>
+                </value>
+                <value>
+                    <fullName>Inventory</fullName>
+                    <default>false</default>
+                    <label>Inventory</label>
+                </value>
+                <value>
+                    <fullName>iPad App</fullName>
+                    <default>false</default>
+                    <label>iPad App</label>
+                </value>
+                <value>
+                    <fullName>Linesheets / Styles</fullName>
+                    <default>false</default>
+                    <label>Linesheets / Styles</label>
+                </value>
+                <value>
+                    <fullName>Login Issues</fullName>
+                    <default>false</default>
+                    <label>Login Issues</label>
+                </value>
+                <value>
+                    <fullName>Orders</fullName>
+                    <default>false</default>
+                    <label>Orders</label>
+                </value>
+                <value>
+                    <fullName>Reports</fullName>
+                    <default>false</default>
+                    <label>Reports</label>
+                </value>
+                <value>
+                    <fullName>User Settings</fullName>
+                    <default>false</default>
+                    <label>User Settings</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <listViews>
+        <fullName>AllOpenCases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>All Open Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Closed_Cases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.REASON</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>Case_Age__c</columns>
+        <columns>CASES.CLOSED</columns>
+        <columns>Minutes_Spent__c</columns>
+        <columns>OWNER_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All Closed Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>Backup_Queue_Case</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+        <filterScope>Queue</filterScope>
+        <label>Backup Queue</label>
+        <queue>Backup_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Bonjour_Case</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+        <filterScope>Queue</filterScope>
+        <label>Bonjour</label>
+        <queue>Bonjour</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Bonjour_Support</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>bonjour@jooraccess.com,support@jooraccess.com</value>
+        </filters>
+        <label>Bonjour &amp; Support</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Buyer_Case</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+        <filterScope>Queue</filterScope>
+        <label>Buyer</label>
+        <queue>Buyer</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Buyer_Info</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>info@jooraccess.com,buyer@jooraccess.com</value>
+        </filters>
+        <label>Buyer &amp; Info</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>CSM_Overview_Queue</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>bonjour@jooraccess.com,support@jooraccess.com</value>
+        </filters>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.CSM</value>
+        </filters>
+        <label>CSM Overview Queue</label>
+    </listViews>
+    <listViews>
+        <fullName>Default_queue_for_test_Case</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Default queue_for_test</label>
+        <queue>Default_queue_for_test</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Info_Case</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+        <filterScope>Queue</filterScope>
+        <label>Info</label>
+        <queue>Info</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Integrations_Case</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+        <filterScope>Queue</filterScope>
+        <label>Integrations</label>
+        <queue>Integrations</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>JB_List_View</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+        <filterScope>Mine</filterScope>
+        <label>JB List View</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpenCases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.REASON</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>Case_Age__c</columns>
+        <columns>CASES.CLOSED</columns>
+        <columns>Minutes_Spent__c</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.LAST_UPDATE</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>My Open Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Closed_Cases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.REASON</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>Case_Age__c</columns>
+        <columns>CASES.CLOSED</columns>
+        <columns>Minutes_Spent__c</columns>
+        <columns>OWNER_NAME</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Closed Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>NMG_Retail_Case</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+        <filterScope>Queue</filterScope>
+        <label>NMG Support</label>
+        <queue>NMG_Support</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Product_Support_Overview_Queue</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.ORIGIN</columns>
+        <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.ORIGIN</field>
+            <operation>equals</operation>
+            <value>Chat,info@jooraccess.com,bonjour@jooraccess.com,support@jooraccess.com,buyer@jooraccess.com</value>
+        </filters>
+        <filters>
+            <field>CASES.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Case.Product_Support</value>
+        </filters>
+        <filters>
+            <field>CASES.STATUS</field>
+            <operation>equals</operation>
+            <value>In Progress</value>
+        </filters>
+        <label>Product Support Overview Queue</label>
+    </listViews>
+    <listViews>
+        <fullName>Retail_App_Case</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+        <filterScope>Queue</filterScope>
+        <label>Retail App</label>
+        <queue>Retail_App</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Retailer_Applications_Case</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>OWNER_NAME</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+        <filterScope>Queue</filterScope>
+        <label>Retailer Applications</label>
+        <queue>Retailer_Applications</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Test_Case</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Test</label>
+        <queue>Test</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>CSM</fullName>
+        <active>true</active>
+        <businessProcess>Common Process</businessProcess>
+        <compactLayoutAssignment>Case_Compact_Layout</compactLayoutAssignment>
+        <label>CSM</label>
+        <picklistValues>
+            <picklist>Case_Subreason__c</picklist>
+            <values>
+                <fullName>Add New User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Price Type</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add%2FEdit Style%28s%29 %28add%3F%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bug</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change Order Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Export Customer List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Export Linesheet %28add%3F%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Force Connect %28Create New Account%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Force Connect Accounts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Linesheet visibility %28add%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merge Multiple POs into one PO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Move Orders %28between accounts%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Feature%2FEnhancement Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Password Reset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect Asking Questions %28retail%2Fbrand%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resolve Orphan Orders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spam Calls</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Permissions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Re-Education %28product training%2Fexplaination%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>What is JOOR%3F</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Data_category__c</picklist>
+            <values>
+                <fullName>JOOR Brands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JOOR Free Retailers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JOOR Premium Retailers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-JOOR Brands</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Escalate_to__c</picklist>
+            <values>
+                <fullName>Level 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Level 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Level 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Chat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personal_Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>bonjour%40jooraccess%2Ecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>info%40jooraccess%2Ecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>support%40jooraccess%2Ecom</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Account Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Connections</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Submission Portal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Inquiry %2F Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>I cannot log in</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inventory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Linesheet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Orders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reports</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>iPad App</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>CSM</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Integrations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JDT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RSM</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>What_can_we_help_with__c</picklist>
+            <values>
+                <fullName>Account Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Connections</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Inquiry %2F Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inventory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Linesheets %2F Styles</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Login Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Orders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reports</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>iPad App</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Integrations</fullName>
+        <active>true</active>
+        <businessProcess>Integration</businessProcess>
+        <compactLayoutAssignment>Case_Compact_Layout</compactLayoutAssignment>
+        <label>Integrations</label>
+        <picklistValues>
+            <picklist>Case_Subreason__c</picklist>
+            <values>
+                <fullName>API Customers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assortments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Budgets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bug</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contract Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Sync</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Documentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EDI 850</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ERP %3E Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ERP %3E Outreach%2FDiscovery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ERP %3E Piloting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ERP %3E Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FTP Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Force Export</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hierarchy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Improvement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inventory Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kellwood</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Export</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Feature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Old RLM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Onboarding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>POS %3E Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>POS %3E Outreach%2FDiscovery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>POS %3E Piloting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>POS %3E Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Questions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sample Files</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Schedule Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Set%2FUpdate Required Fields</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Setup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Size Curves</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Size Mapping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Style Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Questions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPC Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Validation Errors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Orders</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Data_category__c</picklist>
+            <values>
+                <fullName>JOOR Brands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JOOR Free Retailers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JOOR Premium Retailers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-JOOR Brands</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Escalate_to__c</picklist>
+            <values>
+                <fullName>Level 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Chat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personal_Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>integrations%40jooraccess%2Ecom</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>API</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Custom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat File</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JDT Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partnership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project Implementation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect%2FSales Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>CSM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrations</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>JDT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RSM</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>What_can_we_help_with__c</picklist>
+            <values>
+                <fullName>Account Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Connections</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Inquiry %2F Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inventory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Linesheets %2F Styles</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Login Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Orders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reports</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>iPad App</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>JDT</fullName>
+        <active>true</active>
+        <businessProcess>JDT Process</businessProcess>
+        <compactLayoutAssignment>Case_Compact_Layout</compactLayoutAssignment>
+        <label>JDT</label>
+        <picklistValues>
+            <picklist>Case_Subreason__c</picklist>
+            <values>
+                <fullName>Add Connections</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Images%2FSwatches</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Styles to Existing Linesheet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad Data</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brand Overlap</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Color Updates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Copy Linesheet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Copy Linesheet with Images</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delete Styles%2FLinesheets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Division Updates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initial Account List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insert%2FUpdate Tags</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrations Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Investigate Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Last Modified Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Linesheet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Linesheet with Images</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Orders Failing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Updates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Remove Styles from Existing Linesheet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reorder Linesheet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resize Images%2FSwatches</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Restore Styles%2FLinesheets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retailer Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Size Updates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Connections</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Images%2FSwatches</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Sizes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Style Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Updated Account List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Permissions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Data_category__c</picklist>
+            <values>
+                <fullName>JOOR Brands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JOOR Free Retailers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JOOR Premium Retailers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-JOOR Brands</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Escalate_to__c</picklist>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Chat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personal_Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>assets%40jooraccess%2Ecom</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Connections</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Request - For Client</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Request - Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Images%2FSwatches</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inventory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Linesheet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Look Into Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Updates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Orphans</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail Orders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Style Updates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPCs</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>CSM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JDT</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Product Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RSM</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>What_can_we_help_with__c</picklist>
+            <values>
+                <fullName>Account Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Connections</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Inquiry %2F Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inventory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Linesheets %2F Styles</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Login Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Orders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reports</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>iPad App</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Product_Support</fullName>
+        <active>true</active>
+        <businessProcess>Common Process</businessProcess>
+        <compactLayoutAssignment>Case_Compact_Layout</compactLayoutAssignment>
+        <label>Product Support</label>
+        <picklistValues>
+            <picklist>Case_Subreason__c</picklist>
+            <values>
+                <fullName>API Customers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Connections</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Images%2FSwatches</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add New User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Price Type</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Styles to Existing Linesheet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add%2FEdit Style%28s%29 %28add%3F%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assortments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad Data</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brand Overlap</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Budgets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bug</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change Order Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Color Updates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contract Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Copy Linesheet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Copy Linesheet with Images</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Sync</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delete Styles%2FLinesheets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Division Updates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Documentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EDI 850</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ERP %3E Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ERP %3E Outreach%2FDiscovery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ERP %3E Piloting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ERP %3E Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Export Customer List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Export Linesheet %28add%3F%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FTP Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Force Connect %28Create New Account%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Force Connect Accounts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Force Export</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hierarchy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Improvement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initial Account List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insert%2FUpdate Tags</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrations Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inventory Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Investigate Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kellwood</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Last Modified Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Linesheet visibility %28add%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Export</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merge Multiple POs into one PO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Move Orders %28between accounts%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Feature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Feature%2FEnhancement Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Linesheet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Linesheet with Images</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Old RLM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Onboarding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Orders Failing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>POS %3E Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>POS %3E Outreach%2FDiscovery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>POS %3E Piloting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>POS %3E Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Password Reset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Updates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Questions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect Asking Questions %28retail%2Fbrand%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Remove Styles from Existing Linesheet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reorder Linesheet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resize Images%2FSwatches</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resolve Orphan Orders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Restore Styles%2FLinesheets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retailer Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sample Files</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Schedule Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Set%2FUpdate Required Fields</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Setup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Size Curves</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Size Mapping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Size Updates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spam Calls</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Style Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Questions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPC Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Connections</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Images%2FSwatches</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Permissions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Sizes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Style Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Updated Account List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Permissions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Re-Education %28product training%2Fexplaination%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Validation Errors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Orders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>What is JOOR%3F</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Data_category__c</picklist>
+            <values>
+                <fullName>JOOR Brands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JOOR Free Retailers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JOOR Premium Retailers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-JOOR Brands</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Escalate_to__c</picklist>
+            <values>
+                <fullName>Level 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Level 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Level 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Chat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personal_Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>bonjour%40jooraccess%2Ecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>info%40jooraccess%2Ecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>support%40jooraccess%2Ecom</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>API</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Account Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bug Troubleshooting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Connections</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Custom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Request - For Client</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Request - Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Submission Portal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flat File</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Inquiry %2F Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Historical Orders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>I cannot log in</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Images%2FSwatches</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In-Market Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inventory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JDT Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Linesheet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Linesheet Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Linesheets %2F Styles</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Look Into Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merge Accounts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merge Requests</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Feature%2FImprovement Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Updates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Orders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Orphans</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partnership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project Implementation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect%2FSales Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reports</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail Orders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retailer Applications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retailer Settings Tasks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Style Updates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPCs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Re-education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>iPad App</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>CSM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JDT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Support</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>RSM</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>What_can_we_help_with__c</picklist>
+            <values>
+                <fullName>Account Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Connections</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Inquiry %2F Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inventory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Linesheets %2F Styles</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Login Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Orders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reports</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>iPad App</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>RSM</fullName>
+        <active>true</active>
+        <businessProcess>Common Process</businessProcess>
+        <compactLayoutAssignment>Case_Compact_Layout</compactLayoutAssignment>
+        <label>RSM</label>
+        <picklistValues>
+            <picklist>Case_Subreason__c</picklist>
+            <values>
+                <fullName>API Customers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Connections</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Images%2FSwatches</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add New User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Price Type</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add Styles to Existing Linesheet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Add%2FEdit Style%28s%29 %28add%3F%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assortments</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad Data</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Brand Overlap</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Budgets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bug</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change Order Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Color Updates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contract Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Copy Linesheet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Copy Linesheet with Images</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Sync</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delete Styles%2FLinesheets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Division Updates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Documentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EDI 850</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ERP %3E Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ERP %3E Outreach%2FDiscovery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ERP %3E Piloting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ERP %3E Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Export Customer List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Export Linesheet %28add%3F%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FTP Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Force Connect %28Create New Account%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Force Connect Accounts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Force Export</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hierarchy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Improvement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Initial Account List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insert%2FUpdate Tags</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrations Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inventory Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Investigate Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kellwood</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Last Modified Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Linesheet visibility %28add%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Export</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merge Multiple POs into one PO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Move Orders %28between accounts%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Feature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Feature%2FEnhancement Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Linesheet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Linesheet with Images</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Old RLM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Onboarding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Orders Failing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>POS %3E Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>POS %3E Outreach%2FDiscovery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>POS %3E Piloting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>POS %3E Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Password Reset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Updates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Questions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect Asking Questions %28retail%2Fbrand%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Remove Styles from Existing Linesheet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reorder Linesheet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resize Images%2FSwatches</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Resolve Orphan Orders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Restore Styles%2FLinesheets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retailer Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sample Files</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Schedule Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Set%2FUpdate Required Fields</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Setup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Size Curves</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Size Mapping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Size Updates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spam Calls</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Style Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Questions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Testing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UPC Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Connections</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Images%2FSwatches</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Permissions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Sizes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Style Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Updated Account List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Permissions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Re-Education %28product training%2Fexplaination%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Validation Errors</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Orders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>What is JOOR%3F</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Data_category__c</picklist>
+            <values>
+                <fullName>JOOR Brands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JOOR Free Retailers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JOOR Premium Retailers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-JOOR Brands</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Escalate_to__c</picklist>
+            <values>
+                <fullName>Level 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Chat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personal_Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>buyer%40jooraccess%2Ecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>nmgsupport%40jooraccess%2Ecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>retail%40jooraccess%2Ecom</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Account Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bug Troubleshooting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In-Market Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Linesheet Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merge Accounts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Feature%2FImprovement Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retailer Applications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retailer Settings Tasks</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Re-education</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>CSM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JDT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RSM</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>What_can_we_help_with__c</picklist>
+            <values>
+                <fullName>Account Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Connections</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Inquiry %2F Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Integrations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inventory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Linesheets %2F Styles</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Login Issues</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Orders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reports</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>iPad App</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>CASES.CASE_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.SUBJECT</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.TYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.REASON</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.ORIGIN</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.STATUS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.CLOSED</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Minutes_Spent__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OWNER_NAME</customTabListAdditionalFields>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeStatus</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>CASES.CASE_NUMBER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.SUBJECT</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.STATUS</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.CASE_NUMBER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.SUBJECT</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.STATUS</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>CASES.STATUS</searchFilterFields>
+        <searchResultsAdditionalFields>CASES.CASE_NUMBER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.TYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.REASON</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.ORIGIN</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.CLOSED</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Minutes_Spent__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OWNER_NAME</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWriteTransfer</sharingModel>
+    <validationRules>
+        <fullName>Case_as_Status_minutes</fullName>
+        <active>true</active>
+        <description>Minutes Spent and Resolution should only be required to set Case as Status &gt; Closed or Resolved</description>
+        <errorConditionFormula>AND(
+        ISBLANK( Minutes_Spent__c ),   
+        OR(
+           ISPICKVAL (Status , &quot;Closed&quot;),
+           ISPICKVAL (Status , &quot;Resolved&quot;)
+        )        
+)</errorConditionFormula>
+        <errorMessage>To close the case, fill Minutes Spent field</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Case_as_Status_resolution</fullName>
+        <active>true</active>
+        <description>Minutes Spent and Resolution should only be required to set Case as Status &gt; Closed or Resolved</description>
+        <errorConditionFormula>AND(
+        ISBLANK( Resolution__c ),
+        OR(
+           ISPICKVAL (Status , &quot;Closed&quot;),
+           ISPICKVAL (Status , &quot;Resolved&quot;)
+        )        
+)</errorConditionFormula>
+        <errorMessage>To close the case, fill Resolution field</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Closed_Case_Required_Fields</fullName>
+        <active>false</active>
+        <description>Forces certain fields to be filled in when closing a case. Requires validation rule because Closed Case page layout does not apply to lightning edition, so we can&apos;t require those fields during the close case process without a validation rule.</description>
+        <errorConditionFormula>AND(
+IsClosed,
+
+OR(
+ISBLANK(Resolution__c),
+ISBLANK(Minutes_Spent__c)
+)
+)</errorConditionFormula>
+        <errorMessage>Resolution and Minutes Spent are required to close this Case.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Closed_Case_Required_Fields_New</fullName>
+        <active>true</active>
+        <description>Forces certain fields to be filled in when closing a case. Requires validation rule because Closed Case page layout does not apply to lightning edition, so we can&apos;t require those fields during the close case process without a validation rule.</description>
+        <errorConditionFormula>AND(
+ PRIORVALUE( IsClosed ) = False,
+ IsClosed,
+
+OR(
+ISBLANK(Resolution__c),
+ISBLANK(Minutes_Spent__c)
+)
+)</errorConditionFormula>
+        <errorMessage>Resolution and Minutes Spent are required to close this Case.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Minutes_Spent</fullName>
+        <active>true</active>
+        <description>Prohibits negative value of spent minutes</description>
+        <errorConditionFormula>Minutes_Spent__c &lt; 0</errorConditionFormula>
+        <errorMessage>The time spent can not be a negative value</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Quick_Close</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Quick Close</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&apos;/soap/ajax/33.0/connection.js&apos;)}
+ 
+if(&apos;{!Case.IsClosed}&apos; == true){
+	alert(&apos;This case is already closed.&apos;);
+}else{
+	var c = new sforce.SObject(&apos;Case&apos;);
+	c.Id = &apos;{!Case.Id}&apos;;
+	c.Status = &apos;Closed&apos;;
+	var result = sforce.connection.update([c]);
+ 
+	if (result[0].success == &apos;false&apos;) {
+		alert(result[0].errors.message);
+	} else {
+		var cc = new sforce.SObject(&apos;CaseComment&apos;);
+		cc.ParentId = &apos;{!Case.Id}&apos;;
+		cc.CommentBody = &apos;Closed by portal user&apos;;
+		sforce.connection.emailHeader = {triggerUserEmail:true};
+		var result = sforce.connection.create([cc]);
+ 
+		if (result[0].success == &apos;false&apos;) {
+			alert(result[0].errors.message);
+		} else {
+			location.reload(true);
+		}
+	}	 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Test_Email_Template</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Test Email Template</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>window.location = &apos;/_ui/core/email/author/EmailAuthor?p3 ={! Case.Id }&amp;p3={!Case.CaseNumber}&amp;rtype=003&amp;template_id=00X0x000000QGwa&apos;</url>
+    </webLinks>
+</CustomObject>

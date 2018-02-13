@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skill xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <users>
+            <user>jezelle@jooraccess.com</user>
+            <user>rmcguire-joor@salesforce.com</user>
+            <user>saara@jooraccess.com</user>
+        </users>
+    </assignments>
+    <description>Skill for Full Access Retailer chats</description>
+    <label>SFDC Skill - Full Retailer</label>
+</Skill>

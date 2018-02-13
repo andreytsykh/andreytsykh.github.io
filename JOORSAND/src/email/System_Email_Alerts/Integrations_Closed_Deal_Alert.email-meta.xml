@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Alert to integrations when deals are won so they are aware of integration work that will be starting.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Integrations Closed Deal Alert</name>
+    <style>none</style>
+    <subject>Won Deal Alert w/ Integration Work for {!Opportunity.Account}!</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

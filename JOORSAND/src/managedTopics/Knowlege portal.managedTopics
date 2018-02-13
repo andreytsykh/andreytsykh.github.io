@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ManagedTopics xmlns="http://soap.sforce.com/2006/04/metadata">
+    <managedTopic>
+        <fullName>Knowlege portal.Featured:Full Access Brands</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Full Access Brands</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Featured:Full Access Retailers</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Full Access Retailers</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Featured:Limited Access Brands</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Limited Access Brands</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Featured:Limited Access Retailers</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Limited Access Retailers</name>
+        <parentName></parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:Connecting to My Brands Retailers</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Connecting to My Brands Retailers</name>
+        <parentName>Limited Access Retailers</parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:Connecting to My Retailers</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Connecting to My Retailers</name>
+        <parentName>Limited Access Brands</parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:Connections &amp; Brand-Specific Data All Retailers</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Connections &amp; Brand-Specific Data All Retailers</name>
+        <parentName>Full Access Retailers</parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:Connections &amp; Customer Specific Data</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Connections &amp; Customer Specific Data</name>
+        <parentName>Full Access Brands</parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:Data Uploader Brands</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Data Uploader Brands</name>
+        <parentName>Limited Access Brands</parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:FAQ</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>FAQ</name>
+        <parentName>Full Access Brands</parentName>
+        <position>9</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:FAQ All Retailers</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>FAQ All Retailers</name>
+        <parentName>Full Access Retailers</parentName>
+        <position>6</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:FAQ Brands</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>FAQ Brands</name>
+        <parentName>Limited Access Brands</parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:FAQ Retailers</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>FAQ Retailers</name>
+        <parentName>Limited Access Retailers</parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:Full Access Brands</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Full Access Brands</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:Full Access Retailers</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Full Access Retailers</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:General</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>General</name>
+        <parentName>Full Access Brands</parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:General All Retailers</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>General All Retailers</name>
+        <parentName>Full Access Retailers</parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:General Brands</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>General Brands</name>
+        <parentName>Limited Access Brands</parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:General Retailers</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>General Retailers</name>
+        <parentName>Limited Access Retailers</parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:Integrations</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Integrations</name>
+        <parentName>Full Access Brands</parentName>
+        <position>7</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:Inventory</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Inventory</name>
+        <parentName>Full Access Brands</parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:JOOR Brand App</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>JOOR Brand App</name>
+        <parentName>Full Access Brands</parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:JOOR Data Standards</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>JOOR Data Standards</name>
+        <parentName>Full Access Brands</parentName>
+        <position>8</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:JOOR Data Standards Brands</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>JOOR Data Standards Brands</name>
+        <parentName>Limited Access Brands</parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:JOOR Retailer App All Retailers</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>JOOR Retailer App All Retailers</name>
+        <parentName>Full Access Retailers</parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:JOOR Security Protocol All Retailers</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>JOOR Security Protocol All Retailers</name>
+        <parentName>Full Access Retailers</parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:Limited Access Brands</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Limited Access Brands</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:Limited Access Retailers</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Limited Access Retailers</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:Linesheets</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Linesheets</name>
+        <parentName>Full Access Brands</parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:Notifications And Messages All Retailer</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Notifications And Messages All Retailer</name>
+        <parentName>Full Access Retailers</parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:Notifications And Messages Retailers</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Notifications And Messages Retailers</name>
+        <parentName>Limited Access Retailers</parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:Orders</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Orders</name>
+        <parentName>Full Access Brands</parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:Orders And Assortments All Retailers</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Orders And Assortments All Retailers</name>
+        <parentName>Full Access Retailers</parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:Orders Retailers</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Orders Retailers</name>
+        <parentName>Limited Access Retailers</parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:Reports</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Reports</name>
+        <parentName>Full Access Brands</parentName>
+        <position>6</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:Test123</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Test123</name>
+        <parentName>Full Access Retailers</parentName>
+        <position>7</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Knowlege portal.Navigational:Test1234</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Test1234</name>
+        <parentName>Limited Access Brands</parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+</ManagedTopics>

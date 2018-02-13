@@ -1,0 +1,13 @@
+.THIS {
+	padding: 15px;
+}
+
+.THIS .forceRecordEditActions {
+    margin-bottom: 80px;
+    margin-top: -40px;
+}
+
+.THIS .slds-form_compound .slds-form-element__row .slds-form-element+.slds-form-element,
+.THIS .slds-form--compound .slds-form-element__row .slds-form-element+.slds-form-element {
+	margin-left: 0px;
+}

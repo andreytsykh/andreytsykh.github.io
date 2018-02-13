@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;font-family: helvetica; font-size: 22px;&quot;&gt;Browse help topics&lt;/b&gt;&lt;/p&gt;&lt;p&gt; &lt;/p&gt;</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:richTextInline</componentName>
+        </componentInstances>
+        <name>header</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>richTextValue</name>
+                <value>&lt;p&gt;&lt;a href=&quot;https://www.google.com.ua/?gfe_rd=cr&amp;amp;dcr=0&amp;amp;ei=FS9SWpH-NM707gT8iImIDQ&quot; target=&quot;_blank&quot;&gt;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.General.1}&quot; /&gt; &lt;/a&gt;&lt;a href=&quot;https://sandbox-jooraccess.cs95.force.com/customer/s/topic/0TO0x0000000139GAA/general-all-brands&quot; target=&quot;_self&quot; style=&quot;font-size: 16px; font-family: helvetica; color: rgb(102, 163, 224); background-color: rgb(255, 255, 255);&quot;&gt;General&lt;/a&gt;&lt;a href=&quot;https://www.google.com.ua/?gfe_rd=cr&amp;amp;dcr=0&amp;amp;ei=FS9SWpH-NM707gT8iImIDQ&quot; target=&quot;_blank&quot; style=&quot;font-size: 16px; font-family: helvetica; color: rgb(102, 163, 224);&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/a&gt;&lt;span style=&quot;font-size: 16px; font-family: helvetica; color: rgb(102, 163, 224);&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.Connections_for_Full_Access_Brand_a.1}&quot; /&gt; &lt;a href=&quot;https://sandbox-jooraccess.cs95.force.com/customer/s/topic/0TO0x000000013iGAA/connections-and-customer-specific-data&quot; target=&quot;_blank&quot; style=&quot;color: rgb(102, 163, 224); font-family: helvetica; font-size: 16px;&quot;&gt;C&lt;/a&gt;&lt;a href=&quot;https://sandbox-jooraccess.cs95.force.com/customer/s/topic/0TO0x000000013iGAA/connections-and-customer-specific-data&quot; target=&quot;_self&quot; style=&quot;color: rgb(102, 163, 224); font-family: helvetica; font-size: 16px;&quot;&gt;onnections &amp;amp; Customer-Specific Data&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://sandbox-jooraccess.cs95.force.com/customer/s/topic/0TO0x000000013jGAA/linesheets&quot; target=&quot;_blank&quot; style=&quot;font-family: helvetica; font-size: 16px; color: rgb(102, 163, 224);&quot;&gt;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.Linesheets.1}&quot; /&gt;&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;https://sandbox-jooraccess.cs95.force.com/customer/s/topic/0TO0x000000013jGAA/linesheets&quot; target=&quot;_self&quot; style=&quot;font-family: helvetica; font-size: 16px; color: rgb(102, 163, 224);&quot;&gt;Linesheets&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;img class=&quot;sfdcCbImage&quot; src=&quot;{!contentAsset.Orders.1}&quot; /&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&quot;https://sandbox-jooraccess.cs95.force.com/customer/s/topic/0TO0x000000013kGAA/orders&quot; target=&quot;_self&quot; style=&quot;font-size: 16px; font-family: helvetica; color: rgb(102, 163, 224);&quot;&gt;Orders&amp;nbsp;&lt;/a&gt;&lt;a href=&quot;https://sandbox-jooraccess.cs95.force.com/customer/s/topic/0TO0x000000013kGAA/orders&quot; target=&quot;_self&quot;&gt;&amp;nbsp;&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:richTextInline</componentName>
+        </componentInstances>
+        <name>content</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <name>footer</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <componentInstances>
+            <componentInstanceProperties>
+                <name>description</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>metaTags</name>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>title</name>
+                <value>FULL ACCESS BRANDS</value>
+            </componentInstanceProperties>
+            <componentName>forceCommunity:seoAssistant</componentName>
+        </componentInstances>
+        <name>sfdcHiddenRegion</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>FULL ACCESS BRANDS</masterLabel>
+    <template>
+        <name>siteforce:sldsOneColLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

@@ -1,0 +1,11 @@
+The following {!Opportunity.Type} opportunity for {!Opportunity.Account} is a credit risk for a past due balance:
+
+{!Opportunity.Name}
+{!Opportunity.Link}
+Contract Start: {!Opportunity.Contract_Start_Date__c} 
+Contract End: {!Opportunity.Contract_End_Date__c}
+TCV: {!Opportunity.Amount} 
+Owner: {!Opportunity.OwnerFullName} ({!Opportunity.Owner_Region__c})
+JOOR ID: {!Account.JOOR_ID__c}
+
+Credit Risk Notes:  {!Opportunity.Credit_Risk_Notes__c}

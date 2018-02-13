@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddProduct</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChoosePricebook</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditAllProduct</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>Discount</fullName>
+    </fields>
+    <fields>
+        <fullName>ListPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>One_Time_Fee__c</fullName>
+        <description>To denote whether or not line items are recurring revenue or one time fees.</description>
+        <externalId>false</externalId>
+        <label>Revenue Type</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Recurring Revenue</fullName>
+                    <default>false</default>
+                    <label>Recurring Revenue</label>
+                </value>
+                <value>
+                    <fullName>One Time Fee</fullName>
+                    <default>false</default>
+                    <label>One Time Fee</label>
+                </value>
+                <value>
+                    <fullName>Transactional</fullName>
+                    <default>false</default>
+                    <label>Transactional</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>OpportunityId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product2Id</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductCode</fullName>
+    </fields>
+    <fields>
+        <fullName>Product_Code__c</fullName>
+        <description>Stamped by workflow rule whenever a product is added to an opportunity, used for roll up summary of product types. Specifically of the service fee to alert integrations that product has been added.</description>
+        <externalId>false</externalId>
+        <label>Product Code</label>
+        <length>55</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quantity</fullName>
+    </fields>
+    <fields>
+        <fullName>ServiceDate</fullName>
+    </fields>
+    <fields>
+        <fullName>Subtotal</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>UnitPrice</fullName>
+    </fields>
+    <validationRules>
+        <fullName>Cannot_Change_Line_Items_on_Closed_Opps</fullName>
+        <active>true</active>
+        <description>Prevents changing the Revenue Type, Sales Price, and Quantity on Opportunity Product Line Items after a deal is closed.</description>
+        <errorConditionFormula>AND(
+Opportunity.IsClosed = TRUE,
+
+OR(
+ISCHANGED(One_Time_Fee__c),
+ISCHANGED(UnitPrice),
+ISCHANGED(Quantity)
+)
+)</errorConditionFormula>
+        <errorMessage>Cannot change Revenue Type or Value of Product Line Items after the deal is closed.</errorMessage>
+    </validationRules>
+</CustomObject>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>When a case has been status New for 4 hours</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CASE: New case for 4 hours</name>
+    <style>none</style>
+    <subject>Case has status New for 4 hours</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

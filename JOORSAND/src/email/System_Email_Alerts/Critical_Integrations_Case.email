@@ -1,0 +1,10 @@
+The following Integrations Case for {!Case.Account} has been marked CRITICAL:
+
+Owner: {!Case.OwnerFullName}
+Origin: {!Case.Origin}
+Reason: {!Case.Reason}
+
+Subject: {!Case.Subject}
+Comments: {!Case.Description}
+
+Link to Case: {!Case.Link}

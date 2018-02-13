@@ -1,0 +1,21 @@
+The following opportunity for {!Opportunity.Account} has had an Integration product added:
+
+{!Opportunity.Name}
+{!Opportunity.Link}
+
+Owner: {!Opportunity.OwnerFullName} ({!Opportunity.Owner_Region__c})
+Stage: {!Opportunity.StageName}
+Projected Close Date: {!Opportunity.CloseDate}
+
+TCV: {!Opportunity.Amount}
+Recurring Total: {!Opportunity.Recurring_Total__c}
+One Time Fee Total: {!Opportunity.One_Time_Fee_Total__c}
+
+
+*** INTEGRATION DETAILS (if available) ***
+
+Full Integration: {!Opportunity.Full_Integration__c}
+Order Export Sync: {!Opportunity.Order_Export_Sync__c}
+Style Sync: {!Opportunity.Style_Sync__c}
+Customer Sync: {!Opportunity.Customer_Sync__c}
+Inventory Sync: {!Opportunity.Inventory_Sync__c}
