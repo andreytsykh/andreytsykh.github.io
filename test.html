@@ -5,7 +5,23 @@
   
 </head>
 <body>	
+	<input type="file" id="fileElem" multiple style="display:none" onchange="handleFiles(this.files)" value ="C:/Users/new/Desktop/test">
+	<a href="#" id="fileSelect">Select some files</a> 
+	<div id="fileList">
+  		<p>No files selected!</p>
+	</div>
 	<script>
+		var fileSelect = document.getElementById("fileSelect"),
+    		fileElem = document.getElementById("fileElem"),
+    		fileList = document.getElementById("fileList");
+
+		fileSelect.addEventListener("click", function (e) {
+		  if (fileElem) {
+		    fileElem.click();
+		  }
+		  e.preventDefault(); // prevent navigation to "#"
+		}, false);
+		
 		function changeUrl(){
 			window.open("file://C:/Users/new/Desktop/test");
 			window.location.replace("file://C:/Users/new/Desktop/test");
