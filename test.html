@@ -5,8 +5,13 @@
   
 </head>
 <body>	
+	<script>
+		function changeUrl(){
+			window.location.replace("http:www.example.com");
+		}
+	</script>
 	<a href="file://C:/Users/new/Desktop/test" >link</a>
-	<input value="Нажми меня" onclick=" window.location.href = "file://C:/Users/new/Desktop/test";" type="button">
+	<input value="Нажми меня" onclick="changeUrl()" type="button">
 	
 </body>
 
