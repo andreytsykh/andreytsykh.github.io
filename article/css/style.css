@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&subset=cyrillic,cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Philosopher:400,700i&subset=cyrillic,cyrillic-ext');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 45px;
+    color: #FFFFFF;
+    text-align: right;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    font-style: italic;
+}
+
+
+h4:before {
+    content: "\00AB ";
+    font-size:80px;
+    font-weight: 700;}
+
+h4 {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    font-style: italic;
+    color: #336600;
+}
+
+h5 {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    font-style: italic;
+    color: #FFFFFF;
+}
+
+h6 {
+    font-weight: 600;
+    font-size: 10px;
+    text-align: center;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: left;
+}
+
+.header {
+    height: 100vh;
+    /*background-attachment: fixed;*/
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%), url(../images/7.jpg) fixed center center;
+    background-repeat: no-repeat
+}
+
+
+img {
+    width: 100%
+}
+
+.avtor {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+
+#author{
+    margin-top: 20px;
+}
