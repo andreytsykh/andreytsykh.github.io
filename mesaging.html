@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00D0Y0000035PsD',
+				'Messaging_Chat',
+				'https://andreyctorg-dev-ed.my.site.com/ESWMessagingChat1705515654379',
+				{
+					scrt2URL: 'https://andreyctorg-dev-ed.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://andreyctorg-dev-ed.my.site.com/ESWMessagingChat1705515654379/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+  </body>
+</html>
