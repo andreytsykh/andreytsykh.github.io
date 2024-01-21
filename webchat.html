@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00D7E000000Akyl',
+				'Messaging_In_Web_Chat',
+				'https://ship4wd--atsykh.sandbox.my.site.com/ESWMessagingInWebChat1705853257395',
+				{
+					scrt2URL: 'https://ship4wd--atsykh.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://ship4wd--atsykh.sandbox.my.site.com/ESWMessagingInWebChat1705853257395/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+  </body>
+</html>
