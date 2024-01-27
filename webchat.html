@@ -1,11 +1,18 @@
 <html>
   <body>
 <script type='text/javascript'>
+	window.addEventListener("onEmbeddedMessagingReady", () => {
+    	console.log("Received the onEmbeddedMessagingReady event…");
+
+    // Send data to Salesforce
+   	 embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({"Order_Number" : "867-5309",
+        	"Customer_ID" : "11098324"});
+
+    // Remove any items from the previous list that you don't want to send
+    	embeddedservice_bootstrap.prechatAPI.removeHiddenPrechatFields(["Customer_ID"]);
+	});
+	
 	function initEmbeddedMessaging() {
-		console.log(window.sessionStorage);
-		console.log(window.localStorage);
-		console.log('from script');
-		window.localStorage.setItem('lol', 'hmmmmm');
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
