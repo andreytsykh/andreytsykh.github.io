@@ -5,13 +5,13 @@
     	console.log("Received the onEmbeddedMessagingReady event…");
 
     // Send data to Salesforce
-   	 embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({"Order_Number" : "867-5309",
-        	"Customer_ID" : "11098324"});
+   	 embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({"info" : "867-5309"});
+	let openRequest = indexedDB.open("store", 1);
 
-    // Remove any items from the previous list that you don't want to send
-    	embeddedservice_bootstrap.prechatAPI.removeHiddenPrechatFields(["Customer_ID"]);
-	});
-	
+	openRequest.onupgradeneeded = function() {
+	  const db = event.target.result;
+	  const objectStore = db.createObjectStore("name", { keyPath: "myKey" });
+	};
 	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
