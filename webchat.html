@@ -1,11 +1,11 @@
 <html>
   <body>
 <script type='text/javascript'>
+	console.log(localStorage);
+			localStorage.setItem('00D7E000000Akyl_WEB_STORAGE', JSON.stringify('610b85cd-6c61-4e58-b7a9-4db1498aabda':{'test':'test'}));
 	function initEmbeddedMessaging() {
 		try {
 			console.log('script onload');
-			console.log(localStorage);
-			localStorage.setItem('00D7E000000Akyl_WEB_STORAGE', JSON.stringify('610b85cd-6c61-4e58-b7a9-4db1498aabda':{'test':'test'}));
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 			embeddedservice_bootstrap.settings.customLabels = [{'test':'test'}];
 			embeddedservice_bootstrap.init(
