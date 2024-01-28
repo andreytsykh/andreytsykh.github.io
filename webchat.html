@@ -1,8 +1,11 @@
 <html>
   <body>
 <script type='text/javascript'>
-	console.log(localStorage);
-			localStorage.setItem('00D7E000000Akyl_WEB_STORAGE', JSON.stringify('610b85cd-6c61-4e58-b7a9-4db1498aabda':{'test':'test'}));
+	window.addEventListener("onEmbeddedMessagingReady", () => {
+  			console.log("Received the onEmbeddedMessagingReady event.");
+		embeddedservice_bootstrap.settings.embeddedServiceConfig.customLabels = [{'test':'test'}];
+  //Add more code here.
+	});
 	function initEmbeddedMessaging() {
 		try {
 			console.log('script onload');
