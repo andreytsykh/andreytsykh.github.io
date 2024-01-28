@@ -1,18 +1,20 @@
 <html>
   <body>
 <script type='text/javascript'>
-	let openRequest = indexedDB.open("store", 1);
+	let openRequest = indexedDB.open("chatDB", 1);
 
 	openRequest.onupgradeneeded = function() {
 	  const db = event.target.result;
-	  const objectStore = db.createObjectStore("name", { keyPath: "myKey" });
+	  const objectStore = db.createObjectStore("name",{autoIncrement: true});
+	  objectStore.add({
+		  firstName : 'Test',
+		  lastName : 'DB Name',
+		  email : 'test@gmail.com',
+		  company : 'Test Company',
+		  phone : ''
+	  });
 	};
 	
-	
-window.addEventListener("onEmbeddedMessagingReady", () => {
-    console.log("Received the onEmbeddedMessagingReady event…");
-    embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({"info" : "867-5309"});
-});
 
 	function initEmbeddedMessaging() {
 		try {
