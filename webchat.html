@@ -5,7 +5,7 @@
 		try {
 			console.log('script onload');
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-			embeddedservice_bootstrap.settings.embeddedServiceConfig.customLabels = [{'test':'test'}];
+			embeddedservice_bootstrap.settings.customLabels = [{'test':'test'}];
 			embeddedservice_bootstrap.init(
 				'00D7E000000Akyl',
 				'Messaging_In_Web_Chat',
@@ -14,6 +14,7 @@
 					scrt2URL: 'https://ship4wd--atsykh.sandbox.my.salesforce-scrt.com'
 				}
 			);
+			console.log(embeddedservice_bootstrap.localStorage);
 		} catch (err) {
 			console.error('Error loading Embedded Messaging: ', err);
 		}
