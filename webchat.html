@@ -3,7 +3,13 @@
 <script type='text/javascript'>
 	window.addEventListener("onEmbeddedMessagingReady", () => {
   			console.log("Received the onEmbeddedMessagingReady event.");
-		embeddedservice_bootstrap.settings.embeddedServiceConfig.customLabels = [{labelName:'test', labelValue: 'test'}];
+		embeddedservice_bootstrap.settings.embeddedServiceConfig.customLabels = [
+			{labelName:'firstName', labelValue: 'TestFirstName'},
+			{labelName:'lastName', labelValue: 'TestLastName'},
+			{labelName:'email', labelValue: 'test@gmail.com'},
+			{labelName:'company', labelValue: 'Test Company'},
+			{labelName:'phone', labelValue: ''},
+		];
   //Add more code here.
 	});
 	function initEmbeddedMessaging() {
