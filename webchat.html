@@ -5,7 +5,7 @@
 
 	openRequest.onupgradeneeded = function() {
 	  const db = event.target.result;
-	  const objectStore = db.createObjectStore("name",{autoIncrement: true});
+	  const objectStore = db.createObjectStore("store",{autoIncrement: true});
 	  objectStore.add({
 		  firstName : 'Test',
 		  lastName : 'DB Name',
