@@ -1,22 +1,25 @@
 <html>
   <body>
 <script type='text/javascript'>
-	let openRequest = indexedDB.open("chatDB", 1);
-
-	openRequest.onupgradeneeded = function() {
-	  const db = event.target.result;
-	  const objectStore = db.createObjectStore("store",{autoIncrement: true});
-	  objectStore.add({
-		  firstName : 'Test',
-		  lastName : 'DB Name',
-		  email : 'test@gmail.com',
-		  company : 'Test Company',
-		  phone : ''
-	  });
-	};
-	
+	window.addEventListener("load", function () {
+        const iframe = window.frames.embeddedservice_bootstrap.siteContextFrame;
+        const wind = iframe.contentWindow;
+         
+        const data = {
+            name: "testing test"
+        }
+         
+        wind.postMessage(JSON.stringify(data), "*")
 
 	function initEmbeddedMessaging() {
+		window.addEventListener("message", function (e) {
+		        console.log('message handler');
+		        const data = JSON.parse(e.data)
+		        if (typeof data.name !== "undefined") {
+		            localStorage.setItem("name", data.name)
+		            console.log("Name is set: " + data.name)
+		        }
+		    })
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
