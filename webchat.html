@@ -4,6 +4,9 @@
 	function initEmbeddedMessaging() {
 		try {
 			console.log('script onload');
+			console.log(localStorage);
+			const items = { ...localStorage };
+			console.log(items);
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 			embeddedservice_bootstrap.settings.customLabels = [{'test':'test'}];
 			embeddedservice_bootstrap.init(
