@@ -2,14 +2,15 @@
   <body>
 <script type='text/javascript'>
 	window.addEventListener("load", function () {
-        const iframe = window.frames.embeddedservice_bootstrap.siteContextFrame;
-        const wind = iframe.contentWindow;
-         
-        const data = {
-            name: "testing test"
-        }
-         
-        wind.postMessage(JSON.stringify(data), "*")
+	        const iframe = window.frames.embeddedservice_bootstrap.siteContextFrame;
+	        const wind = iframe.contentWindow;
+	         
+	        const data = {
+	            name: "testing test"
+	        }
+	         
+	        wind.postMessage(JSON.stringify(data), "*");
+	}
 
 	function initEmbeddedMessaging() {
 		window.addEventListener("message", function (e) {
