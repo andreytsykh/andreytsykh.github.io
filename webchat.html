@@ -10,6 +10,14 @@
 			{labelName:'Company', labelValue: localStorage.getItem('company')},
 			{labelName:'Phone', labelValue: localStorage.getItem('phone')},
 		];
+
+		embeddedservice_bootstrap.userVerificationAPI.setIdentityToken
+	            ({
+	            identityTokenType : "JWT", 
+	
+	            //identityToken :"{The JWT token key value that we created in Stage 4}"
+	            identityToken :"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEyMzQ1NjUifQ.eyJzdWIiOiJhbmRyaWl0ZXN0QGdtYWlsLmNvbSIsImlzcyI6IlNoaXA0d2QiLCJleHAiOjE3NzAyOTI2OTB9.L3GOXYczcPV2AFol053c1LyJzISULHTr6AcRCI7FCHFQZUEWLDSSi3r-DOdJHuWNnx_sqXSbbQQZgEXjReZR9o-FYiPNPQsFH6CNeOJ5vqE2He5--LaSQpD_09TLmOR_rFsabS54zL5MLFl8PAOMOSUMyTJ9A1Yo__ZkKzxxWN7506f1Qvvknkm-hydM5rN2NDI6-Bs2AVuKtNmXzI16_-1SFnL9PXgsZR1Qp6VOP-N_PDlr8UOV66RYGf4ojSB51LHmG7QLsE8FNH74c0Mhxb3CO1gsLUhAXsrAPTeDPnWHuCtIOdxmOp6PXYx_N_lRMFRmuPtgLcx_OWLLNzUQ1w"
+	            });
   //Add more code here.
 	});
 	function initEmbeddedMessaging() {
