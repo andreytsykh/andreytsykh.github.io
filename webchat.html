@@ -35,7 +35,26 @@
 			console.error('Error loading Embedded Messaging: ', err);
 		}
 	};
+
+	function onUserLogout() {
+		  embeddedservice_bootstrap.userVerificationAPI
+		    .clearSession()
+		    .then(() => {
+			    console.log('logout');
+		      // Add actions to run after the session is cleared successfully.
+		    })
+		    .catch((error) => {
+		      // Add actions to run after clearing the session fails.
+		    })
+		    .finally(() => {
+		      // Add actions to run whether the chat client launches
+		      // successfully or not.
+		    });
+
+  // Add code to perform any other logout actions.
+	}
 </script>
 <script type='text/javascript' src='https://ship4wd--atsykh.sandbox.my.site.com/ESWMessagingInWebChat1705853257395/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+	  <button onclick='onUserLogout()'>LOGOUT</button>
   </body>
 </html>
