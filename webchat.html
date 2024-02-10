@@ -11,6 +11,11 @@
 			{labelName:'Phone', labelValue: localStorage.getItem('phone')},
 		];
 
+		embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
+			CompanyId: localStorage.getItem('CompanyId'),
+			UserId: localStorage.getItem('UserId')
+		});
+
 		embeddedservice_bootstrap.userVerificationAPI.setIdentityToken
 	            ({
 	            identityTokenType : "JWT", 
