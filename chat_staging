@@ -1,0 +1,60 @@
+<html>
+  <body>
+<script type='text/javascript'>
+	window.addEventListener("onEmbeddedMessagingReady", () => {
+  			console.log("Received the onEmbeddedMessagingReady event.");
+		embeddedservice_bootstrap.settings.embeddedServiceConfig.customLabels = [
+			{labelName:'_firstName', labelValue: localStorage.getItem('firstName')},
+			{labelName:'_lastName', labelValue: localStorage.getItem('lastName')},
+			{labelName:'_email', labelValue: localStorage.getItem('email')},
+			{labelName:'Company', labelValue: localStorage.getItem('company')},
+			{labelName:'Phone', labelValue: localStorage.getItem('phone')},
+			{labelName:'CompanyId', labelValue: localStorage.getItem('companyId')},
+			{labelName:'UserId', labelValue: localStorage.getItem('userId')},
+		];
+
+		embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
+			CompanyId: localStorage.getItem('CompanyId'),
+			UserId: localStorage.getItem('UserId')
+		});
+
+		embeddedservice_bootstrap.userVerificationAPI.setIdentityToken
+	            ({
+	            identityTokenType : "JWT", 
+	            identityToken :"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImYwMGVkYjYwLWMyZWMtM2M1MC05NTlkLWVhOTdiZjA4YjQyZCJ9.eyJzdWIiOiJ0ZXN0dXNlcklkIiwiaXNzIjoiU2hpcDR3ZCIsImV4cCI6MTgzMzI5NzM2NX0.DSlc5ay6nHn36HnyrZthodQbMmBnVL3aDvesd2joFL84r6ITOM14jLg5jUes-zzlvUFdGyYYS6DOohE3jJDQzOb_M5bi55T_1E3OyaVJCn7zdMQ-c-UxPdl5wSE1kMXmu2Y8dETBg8j2TpJJMz-Q9KfFssO8dotQm2rZiGZ1jN0eIqS9EQFAYVQ8BG3EJMssVQBBD_Vnmkax6KuA0Jnd1XruxBbcKSrSxFquZ9pxmSGWWe7vmH1TSMfU5iC4jOuX7lh09nkDdpDDls7xmk7LMOv9FSXV2lK0ffhgxk6dAL3FGBqREs2Kz6rnhdI0tqxGugYjzifXONrVElbr3pSptA"
+	            });
+	});
+	function initEmbeddedMessaging() {
+		try {
+			console.log('script onload');
+			embeddedservice_bootstrap.settings.language = 'en_US';
+			embeddedservice_bootstrap.init(
+				'00DAe000001QL3R',
+				'Messaging_In_Web_Chat',
+				'https://ship4wd--staging.sandbox.my.site.com/ESWMessagingInWebChat1705853257395',
+				{
+					scrt2URL: 'https://ship4wd--staging.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+
+	function onUserLogout() {
+		  embeddedservice_bootstrap.userVerificationAPI
+		    .clearSession()
+		    .then(() => {
+			    console.log('logout');
+		  
+		    })
+		    .catch((error) => {
+		    })
+		    .finally(() => {
+		    });
+	}
+</script>
+<script type='text/javascript' src='https://ship4wd--atsykh.sandbox.my.site.com/ESWMessagingInWebChat1705853257395/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+	  <button onclick='onUserLogout()'>LOGOUT</button>
+  </body>
+</html>
