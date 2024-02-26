@@ -29,6 +29,7 @@
 	function initEmbeddedMessaging() {
 		try {
 			console.log('script onload');
+			onUserLogout();
 			embeddedservice_bootstrap.settings.language = 'en';
 			embeddedservice_bootstrap.settings.devMode = true;
 			embeddedservice_bootstrap.settings.hideChatButtonOnLoad = true;
