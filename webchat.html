@@ -31,6 +31,7 @@
 			console.log('script onload');
 			embeddedservice_bootstrap.settings.language = 'en';
 			embeddedservice_bootstrap.settings.devMode = true;
+			embeddedservice_bootstrap.settings.hideChatButtonOnLoad = true;
 			embeddedservice_bootstrap.init(
 				'00D7E000000Akyl',
 				'Messaging_In_Web_Chat',
@@ -78,9 +79,13 @@
                 // For example, create a method that logs the user’s attempt to chat.
             });
     }
+	function setVars(){
+		localStorage.setItem('company', 'test');
+	}
 </script>
 <script type='text/javascript' src='https://ship4wd--atsykh.sandbox.my.site.com/ESWMessagingInWebChat1705853257395/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 	  <button onclick='onUserLogout()'>LOGOUT</button>
 	  <button id="launchChatButton" onclick="launchChat()">Click to contact support</button>
+	   <button id="launchChatButton" onclick="setVars()">Populate local storage</button>
   </body>
 </html>
