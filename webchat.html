@@ -31,6 +31,7 @@
 			console.log('script onload');
 			embeddedservice_bootstrap.settings.language = 'en';
 			embeddedservice_bootstrap.settings.devMode = true;
+			embeddedservice_bootstrap.settings.hideChatButtonOnLoad = true;
 			embeddedservice_bootstrap.init(
 				'00D7E000000Akyl',
 				'Messaging_In_Web_Chat',
@@ -61,8 +62,26 @@
 
   // Add code to perform any other logout actions.
 	}
+	function launchChat() {
+        embeddedservice_bootstrap.utilAPI.launchChat()
+            .then(() => {
+		    console.log('chat launch');
+                // Success handler used to perform actions
+                // when the chat client launches successfully.
+                // For example, create a method that disables the launch chat button.
+            }).catch(() => {
+                // Error handler used to perform actions
+                // if the chat client fails to launch.
+                // For example, create a method that hides the launch chat button.
+            }).finally(() => {
+                // Finally handler used to perform any clean-up actions
+                // regardless of whether the chat client launches successfully or not.
+                // For example, create a method that logs the user’s attempt to chat.
+            });
+    }
 </script>
 <script type='text/javascript' src='https://ship4wd--atsykh.sandbox.my.site.com/ESWMessagingInWebChat1705853257395/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 	  <button onclick='onUserLogout()'>LOGOUT</button>
+	  <button id="launchChatButton" onclick="launchChat()">Click to contact support</button>
   </body>
 </html>
