@@ -2,6 +2,7 @@
   <body>
 <script type='text/javascript'>
 	window.addEventListener("onEmbeddedMessagingReady", () => {
+		onUserLogout();
   			console.log("Received the onEmbeddedMessagingReady event.");
 		embeddedservice_bootstrap.settings.embeddedServiceConfig.customLabels = [
 			{labelName:'_firstName', labelValue: localStorage.getItem('firstName')},
@@ -29,7 +30,6 @@
 	function initEmbeddedMessaging() {
 		try {
 			console.log('script onload');
-			onUserLogout();
 			embeddedservice_bootstrap.settings.language = 'en';
 			embeddedservice_bootstrap.settings.devMode = true;
 			embeddedservice_bootstrap.settings.hideChatButtonOnLoad = true;
