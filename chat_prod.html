@@ -1,0 +1,92 @@
+<html>
+  <body>
+<script type='text/javascript'>
+	window.addEventListener("onEmbeddedMessagingReady", () => {
+		onUserLogout();
+  			console.log("Received the onEmbeddedMessagingReady event.");
+		embeddedservice_bootstrap.settings.embeddedServiceConfig.customLabels = [
+			{labelName:'_firstName', labelValue: localStorage.getItem('firstName')},
+			{labelName:'_lastName', labelValue: localStorage.getItem('lastName')},
+			{labelName:'_email', labelValue: localStorage.getItem('email')},
+			{labelName:'Company', labelValue: localStorage.getItem('company')},
+			{labelName:'Phone', labelValue: localStorage.getItem('phone')},
+			{labelName:'CompanyId', labelValue: localStorage.getItem('companyId')},
+			{labelName:'UserId', labelValue: localStorage.getItem('userId')},
+		];
+
+		embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
+			CompanyId: localStorage.getItem('CompanyId'),
+			UserId: localStorage.getItem('UserId')
+		});
+
+		embeddedservice_bootstrap.userVerificationAPI.setIdentityToken
+	            ({
+	            identityTokenType : "JWT", 
+	            //identityToken :"{The JWT token key value that we created in Stage 4}"
+	            identityToken :"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImM0YTE3Y2Y5LTA1MWUtNGU3OC05ZjU1LTdiYzI4NTA2NWE3YiJ9.eyJzdWIiOiJ0ZXN0dXNlcklkIiwiaXNzIjoiU2hpcDR3ZCIsImV4cCI6MTgzMzI5NzM2NX0.IFOGKI3rijVqbCcSQ5gnJrjQsBAbiIRPNKoJbFRnioQDNy6qj7o-7Q4gqhNOuC6cfleSCIqkeiNKITsg0dqdHxgUnx0POZT-uCPZoqO9xMhuKoUZgtARdJATr2CXNfDH0BkAiwrfdEtNDfOaSDR8D5CZfXWPyISPOWQ_GY_vg-b8yqo-8PDj6gUYhRIvLHINVW0EZNDzZwIwI1Qp0K18-jCq33DCfYmodCsI7TnQu1pSjYC6l1HfMfSEcNFLVRKOkcP_W4qLJHGwRg9it8-t8ep5pFatxq72D_5lAr_2RJfFYPqreIFO45exh7SQOWPX-C0HonoqIcot7e-QrWlJew"
+	            });
+  //Add more code here.
+	});
+	function initEmbeddedMessaging() {
+		try {
+			console.log('script onload');
+			embeddedservice_bootstrap.settings.language = 'en';
+			embeddedservice_bootstrap.settings.devMode = true;
+			embeddedservice_bootstrap.settings.hideChatButtonOnLoad = true;
+			embeddedservice_bootstrap.init(
+				'00D4K000004gwqK',
+				'Messaging_In_Web_Chat',
+				'https://ship4wd.my.site.com/ESWMessagingInWebChat1710770464096',
+				{
+					scrt2URL: 'https://ship4wd.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+
+	function onUserLogout() {
+		  embeddedservice_bootstrap.userVerificationAPI
+		    .clearSession()
+		    .then(() => {
+			    console.log('logout');
+		      // Add actions to run after the session is cleared successfully.
+		    })
+		    .catch((error) => {
+		      // Add actions to run after clearing the session fails.
+		    })
+		    .finally(() => {
+		      // Add actions to run whether the chat client launches
+		      // successfully or not.
+		    });
+
+  // Add code to perform any other logout actions.
+	}
+	function launchChat() {
+        embeddedservice_bootstrap.utilAPI.launchChat()
+            .then(() => {
+		    console.log('chat launch');
+                // Success handler used to perform actions
+                // when the chat client launches successfully.
+                // For example, create a method that disables the launch chat button.
+            }).catch(() => {
+                // Error handler used to perform actions
+                // if the chat client fails to launch.
+                // For example, create a method that hides the launch chat button.
+            }).finally(() => {
+                // Finally handler used to perform any clean-up actions
+                // regardless of whether the chat client launches successfully or not.
+                // For example, create a method that logs the user’s attempt to chat.
+            });
+    }
+	function setVars(){
+		localStorage.setItem('company', 'test');
+	}
+</script>
+<script type='text/javascript' src='https://ship4wd.my.site.com/ESWMessagingInWebChat1710770464096/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+	  <button onclick='onUserLogout()'>LOGOUT</button>
+	  <button id="launchChatButton" onclick="launchChat()">Click to contact support</button>
+	   <button id="launchChatButton" onclick="setVars()">Populate local storage</button>
+  </body>
+</html>
