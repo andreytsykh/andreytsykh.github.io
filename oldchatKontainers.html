@@ -33,16 +33,16 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://ship4wd--staging.sandbox.my.salesforce.com',
-			'https://ship4wd--staging.sandbox.my.salesforce-sites.com/liveAgentSetupFlow',
+			'https://ship4wd.my.salesforce.com',
+			'https://ship4wd.my.salesforce-sites.com/liveAgentSetupFlow',
 			gslbBaseURL,
-			'00DPt000004VwQP',
+			'00D4K000004gwqK',
 			'Kontainers_Chat',
 			{
-				baseLiveAgentContentURL: 'https://c.la12s-core1.sfdc-5pakla.salesforceliveagent.com/content',
+				baseLiveAgentContentURL: 'https://c.la11-core1.sfdc-5pakla.salesforceliveagent.com/content',
 				deploymentId: '5724K0000004PM5',
 				buttonId: '5734K0000004Puj',
-				baseLiveAgentURL: 'https://d.la12s-core1.sfdc-5pakla.salesforceliveagent.com/chat',
+				baseLiveAgentURL: 'https://d.la11-core1.sfdc-5pakla.salesforceliveagent.com/chat',
 				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I4K000000XocyUAC_178f91a8d62',
 				isOfflineSupportEnabled: true
 			}
@@ -51,7 +51,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://ship4wd--staging.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://ship4wd.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
